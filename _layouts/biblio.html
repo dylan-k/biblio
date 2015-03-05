@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article>
+          {% for biblio in site.data.biblios %}
+            <p itemscope itemtype="http://schema.org/CreativeWork">
+              <meta itemprop="author" content="{{ biblio.author }}" /> 
+              <a href="{{ biblio.URL }}" itemprop="url">
+                <cite itemprop="name">{{ biblio.title }}</cite> 
+              </a>.
+              {% if biblio.genre %}
+                <span itemprop="genre">{{ biblio.genre }}</span>. 
+              {% endif %}
+              {% if biblio.event-place %}
+                <span itemprop="contentLocation">{{ biblio.event-place }}</span>. 
+              {% endif %}
+              <date itemprop="datePublished"> {% for item in biblio.issued %} {{  item[1] item[2] item[3] | join: '-' | append: '.' }} {% endfor %}</date>
+            </p>
+          {% endfor %}
+        </article>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
