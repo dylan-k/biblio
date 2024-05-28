@@ -1,17 +1,20 @@
-# biblio
+biblio
+================================================================================
 HTML5 Bibliography with Schema.org Metadata
 
 
 I wanted to publish a bibliography of my writings to the web. I wanted that page to have good, semantic markup, according to the schema.org standards and examples. While my bibliography manager, Zotero, has an excellent HTML export ability, the HTML wasn't exactly what I had in mind, so I rolled my own.
 
-## Ingredients
+Ingredients
+--------------------------------------------------------------------------------
 
 - Zotero bibliography manager
 - Jekyll static web generator
 - familiarity with [schema.org microdata](http://schema.org/docs/gs.html#microdata_why) and 
 - familiarity with JSON and YAML
 
-## Procedure
+Procedure
+--------------------------------------------------------------------------------
 
 ### Step 1: Create a bibliography
 
@@ -32,7 +35,9 @@ so do this:
 Duplicate Jekyll's built-in "default.html" file in the _layouts directory. Name it something like biblio.html instead. 
 
 Then replace the line `{{ content }}` in the file you just created. Replace it with something like:
-```
+
+
+```html
         <article>
           {% for biblio in site.data.biblios %}
             <p itemscope itemtype="http://schema.org/CreativeWork">
@@ -76,4 +81,3 @@ from the command line, change to the directory where you've installed Jekyll and
 You can test the HTML that was generated with [Google's Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/) to see how it came out.
 
 Once you're happy with the HTML, you can publish it wherever you like: by adding it to an existing web page, entering it into a WordPress entry, etc.
-
