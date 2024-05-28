@@ -39,10 +39,7 @@
   event-date: "2014-12-11"
   url: "https://www.facebook.com/events/702282426552475/"
   video: "https://vimeo.com/114405681"
-  setlist:
-    - ???
-    - ???
-    - ???
+  setlist: []
 
 - title: "Federal Dust"
   event-place: "Woodlawn, MD"
