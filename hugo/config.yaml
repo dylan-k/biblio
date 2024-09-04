@@ -1,0 +1,14 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "HTML Test 01"
+theme: "sk1"
+caches:
+  getjson:
+    maxAge: 0
+  getresource:
+    maxAge: 0
+
+
+# Include the custom YAML file
+[[module.imports]]
+path = "zoterokey.yaml"

@@ -1,0 +1,1533 @@
+[
+  {
+    "key": "NBID7RB6",
+    "version": 2538,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/NBID7RB6",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/NBID7RB6",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2011-10-30",
+      "numChildren": 2
+    },
+    "data": {
+      "key": "NBID7RB6",
+      "version": 2538,
+      "itemType": "book",
+      "title": "A House Without Walls",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "“A House Without Walls” is an allusion to the Orpheus myth. Two young lovers enter a psychological hell of their own making and attempt to escape. The narrative is designed to be read on an electronic device. It contains links, providing the reader a variety of disjointed paths through the text.",
+      "series": "",
+      "seriesNumber": "",
+      "volume": "",
+      "numberOfVolumes": "",
+      "edition": "Kindle Edition",
+      "place": "",
+      "publisher": "Dylan Kinnett",
+      "date": "2011-10-30",
+      "numPages": "37",
+      "language": "English",
+      "ISBN": "",
+      "shortTitle": "",
+      "url": "http://www.amazon.com/House-Without-Walls-Dylan-Kinnett-ebook/dp/B0061FP6TI",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "Amazon.com",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "7466JDHD",
+    "version": 2554,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/7466JDHD",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/7466JDHD",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/2GZGHIRG",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "1998",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "7466JDHD",
+      "version": 2554,
+      "itemType": "magazineArticle",
+      "title": "An Angel's Effigy",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "a short story by Dylan Kinnett",
+      "publicationTitle": "Visionary Tongue",
+      "volume": "Summer 1998",
+      "issue": "11",
+      "date": "1998",
+      "pages": "9-12",
+      "language": "",
+      "ISSN": "",
+      "shortTitle": "",
+      "url": "http://www.jamiespracklen.co.uk/visionarytongue/archive/archive11_dylan-kinett.htm",
+      "accessDate": "2013-12-08T00:43:19Z",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "KAQI8IKG",
+    "version": 2539,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/KAQI8IKG",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/KAQI8IKG",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2000",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "KAQI8IKG",
+      "version": 2539,
+      "itemType": "document",
+      "title": "An Apocalypse, and Goats",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "short story. 3rd Place, \"Millennium Writing Award,\" Maryville College",
+      "publisher": "",
+      "date": "2000",
+      "language": "",
+      "shortTitle": "",
+      "url": "",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "6FTU3N76",
+    "version": 2539,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/6FTU3N76",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/6FTU3N76",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "6FTU3N76",
+      "version": 2539,
+      "itemType": "webpage",
+      "title": "Antonymic Lines",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "websiteTitle": "Otoliths",
+      "websiteType": "",
+      "date": "",
+      "shortTitle": "",
+      "url": "http://the-otolith.blogspot.com.au/2014/01/dylan-kinnett.html",
+      "accessDate": "2014-01-27T03:24:37Z",
+      "language": "",
+      "rights": "All rights reserved",
+      "extra": ""
+    }
+  },
+  {
+    "key": "XX89DXNP",
+    "version": 2545,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/XX89DXNP",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/XX89DXNP",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/RMVIKITC",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2013-08-01",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "XX89DXNP",
+      "version": 2545,
+      "itemType": "webpage",
+      "title": "Artist Statement",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "websiteTitle": "Extreme Writing Community",
+      "websiteType": "Literary Website",
+      "date": "2013-08-01",
+      "shortTitle": "",
+      "url": "http://seks-ua.blogspot.com/2013/08/dylan-kinnett-artist-statement.html",
+      "accessDate": "2013-12-08T02:58:17Z",
+      "language": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "VIGQK4ZS",
+    "version": 2550,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/VIGQK4ZS",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/VIGQK4ZS",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/T6JSKUQF",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2015-03-23",
+      "numChildren": 1
+    },
+    "data": {
+      "key": "VIGQK4ZS",
+      "version": 2550,
+      "itemType": "presentation",
+      "title": "Baltimore Ekphrasis Project: Reading and Art Gathering",
+      "creators": [
+        {
+          "creatorType": "presenter",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "Join us for a celebration of The Baltimore Ekphrasis Project, a collaboration between LED Baltimore and The Light Ekphrastic, scheduled to run on the Baltimore LED Art Billboard starting in mid-March 2015. Sixty-six Baltimore-area writers and artists have been chosen to create new work inspired by the work of their partners. Come celebrate their work together with a reading by contributors and a one-night-only pop-up art display.",
+      "presentationType": "",
+      "date": "2015-03-23",
+      "place": "University of Baltimore, Student Center, Bogolmony Room",
+      "meetingName": "",
+      "url": "https://www.facebook.com/events/403144946529374/",
+      "accessDate": "2015-03-15T19:28:28Z",
+      "language": "",
+      "shortTitle": "",
+      "rights": "All rights reserved",
+      "extra": ""
+    }
+  },
+  {
+    "key": "6F6V667M",
+    "version": 2556,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/6F6V667M",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/6F6V667M",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/H6XIZ4IZ",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "1996",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "6F6V667M",
+      "version": 2556,
+      "itemType": "webpage",
+      "title": "Blue Thing",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "websiteTitle": "Dischord Aggregate",
+      "websiteType": "",
+      "date": "1996",
+      "shortTitle": "",
+      "url": "http://web.archive.org/web/20081120194356/http://www.discord-aggregate.com/universe/kinnett.htm",
+      "accessDate": "",
+      "language": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "PSNZ6A6M",
+    "version": 2549,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/PSNZ6A6M",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/PSNZ6A6M",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/T4GJT83W",
+        "type": "application/json",
+        "attachmentType": "application/pdf",
+        "attachmentSize": 84657
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2015-03-15",
+      "numChildren": 5
+    },
+    "data": {
+      "key": "PSNZ6A6M",
+      "version": 2549,
+      "itemType": "webpage",
+      "title": "Conversation at the Jubilee Cafe",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "The Baltimore Ekphrasis Project is a collaboration between LED Baltimore and The Light Ekphrastic, scheduled to run on the Baltimore LED Art Billboard in March 2015.  Sixty-six Baltimore-area writers and artists have been chosen to  create new work inspired by the work of their partners. Final written works will be presented as excerpts on top of art on the LEDBaltimore Billboard, and in full in a special online issue of The Light Ekphrastic.",
+      "websiteTitle": "The Light Ekphrastic",
+      "websiteType": "Literary Website",
+      "date": "2015-03-15",
+      "shortTitle": "",
+      "url": "http://thelightekphrastic.com/fischer-kinnett/",
+      "accessDate": "",
+      "language": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "JCPT4J2W",
+    "version": 2455,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/JCPT4J2W",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/JCPT4J2W",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/NKWGKG2H",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Second Land",
+      "parsedDate": "2013-04-04",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "JCPT4J2W",
+      "version": 2455,
+      "itemType": "audioRecording",
+      "title": "Copycat Sessions",
+      "creators": [
+        {
+          "creatorType": "wordsBy",
+          "name": "Kinnett, Dylan"
+        },
+        {
+          "creatorType": "performer",
+          "name": "Second Land"
+        }
+      ],
+      "abstractNote": "in 2008/2009, Second Land performed improvisational and experimental live shows across the U.S.'s east coast which exhibited a perpetually changing mix of instrumentation and technique. Copycat Sessions is a collection of those shows, rehearsals and audio collages that come together as an unique & enjoyable lo-fi ambient jam experience. these tracks of theremin, flute, spoken words and guitars are riddled together in a sea of filters & slow delay, served on a creamy, warm cassette.\ncredits\nreleased 04 April 2013 \nsecond-land.com",
+      "audioRecordingFormat": "Mp3 and Audio Cassette",
+      "seriesTitle": "",
+      "volume": "",
+      "numberOfVolumes": "",
+      "place": "",
+      "label": "Earstroke Records",
+      "date": "2013-04-04",
+      "runningTime": "",
+      "language": "",
+      "ISBN": "",
+      "shortTitle": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "url": "http://nocategories.net/portfolio/copycat-sessions-by-second-land/",
+      "accessDate": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "6DHXGP88",
+    "version": 2541,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/6DHXGP88",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/6DHXGP88",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2002-04-12",
+      "numChildren": 1
+    },
+    "data": {
+      "key": "6DHXGP88",
+      "version": 2541,
+      "itemType": "conferencePaper",
+      "title": "Deceived Deceiver: Chaucer's Pardoner",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "date": "2002-04-12",
+      "proceedingsTitle": "Ninth Annual Blue Ridge Undergraduate Research Conference",
+      "conferenceName": "Blue Ridge Undergraduate Research Conference",
+      "place": "Maryville College",
+      "publisher": "",
+      "volume": "",
+      "pages": "",
+      "series": "",
+      "language": "",
+      "DOI": "",
+      "ISBN": "",
+      "shortTitle": "",
+      "url": "http://www.maryvillecollege.edu/news/9/",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "EQ7WIX2G",
+    "version": 2541,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/EQ7WIX2G",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/EQ7WIX2G",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2004",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "EQ7WIX2G",
+      "version": 2541,
+      "itemType": "journalArticle",
+      "title": "Dream of Seas",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "a poem by Dylan Kinnett",
+      "publicationTitle": "Impressions",
+      "volume": "30",
+      "issue": "",
+      "pages": "10",
+      "date": "2004",
+      "series": "",
+      "seriesTitle": "",
+      "seriesText": "",
+      "journalAbbreviation": "",
+      "language": "",
+      "DOI": "",
+      "ISSN": "",
+      "shortTitle": "",
+      "url": "",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "NQC3NWBE",
+    "version": 2556,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/NQC3NWBE",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/NQC3NWBE",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/87IKQDZ3",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "1996",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "NQC3NWBE",
+      "version": 2556,
+      "itemType": "webpage",
+      "title": "Emily Says",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "websiteTitle": "Discord Aggregate",
+      "websiteType": "Literary Website",
+      "date": "1996",
+      "shortTitle": "",
+      "url": "http://www.discord-aggregate.com/universe/kinnett.htm",
+      "accessDate": "",
+      "language": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "TNSRZ3GF",
+    "version": 2541,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/TNSRZ3GF",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/TNSRZ3GF",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2006-03-23",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "TNSRZ3GF",
+      "version": 2541,
+      "itemType": "journalArticle",
+      "title": "Eviction",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "a poem by Dylan Kinnett",
+      "publicationTitle": "Welter",
+      "volume": "",
+      "issue": "",
+      "pages": "76",
+      "date": "2006-03-23",
+      "series": "",
+      "seriesTitle": "",
+      "seriesText": "",
+      "journalAbbreviation": "",
+      "language": "",
+      "DOI": "",
+      "ISSN": "",
+      "shortTitle": "",
+      "url": "",
+      "accessDate": "",
+      "archive": "Langsdale Library at the University of Baltimore",
+      "archiveLocation": "",
+      "libraryCatalog": "LH1.B36 W45 2006",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "8D9VH4AT",
+    "version": 2545,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/8D9VH4AT",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/8D9VH4AT",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/NVNG2NQN",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2013-07-10",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "8D9VH4AT",
+      "version": 2545,
+      "itemType": "webpage",
+      "title": "Experimental and Visual Poetry",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "websiteTitle": "TRUCK",
+      "websiteType": "Literary Journal",
+      "date": "2013-07-10",
+      "shortTitle": "poems",
+      "url": "http://halvard-johnson.blogspot.com/2013/07/dylan-kinnett.html",
+      "accessDate": "2013-10-26T17:53:13Z",
+      "language": "English",
+      "rights": "Copyright 2013",
+      "extra": ""
+    }
+  },
+  {
+    "key": "9MKN7A7J",
+    "version": 2549,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/9MKN7A7J",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/9MKN7A7J",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/7HIR7BMK",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2014-12-06",
+      "numChildren": 1
+    },
+    "data": {
+      "key": "9MKN7A7J",
+      "version": 2549,
+      "itemType": "presentation",
+      "title": "Federal Dust",
+      "creators": [
+        {
+          "creatorType": "presenter",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "FEDERAL DUST AUX: Washuta, Morgan, Kinnett, Eilbert & Reed | Facebook",
+      "presentationType": "Poetry Reading",
+      "date": "2014-12-06",
+      "place": "Baltimore, MD",
+      "meetingName": "",
+      "url": "https://www.facebook.com/events/765082936896151/",
+      "accessDate": "2014-12-06T01:19:28Z",
+      "language": "",
+      "shortTitle": "",
+      "rights": "All rights reserved",
+      "extra": ""
+    }
+  },
+  {
+    "key": "Z62TUN9C",
+    "version": 2545,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/Z62TUN9C",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/Z62TUN9C",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/N8FEQKJ4",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2012-08-31",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "Z62TUN9C",
+      "version": 2545,
+      "itemType": "magazineArticle",
+      "title": "Flashing in the Sun with a Glitter of Knives",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        },
+        {
+          "creatorType": "contributor",
+          "name": "Alex Masica"
+        }
+      ],
+      "abstractNote": "A literary overview of the Futurists by Dylan Kinnett with textart by Alex Masica",
+      "publicationTitle": "Magic Octopus Magazine",
+      "volume": "",
+      "issue": "1",
+      "date": "2012-08-31",
+      "pages": "",
+      "language": "English",
+      "ISSN": "",
+      "shortTitle": "",
+      "url": "http://issuu.com/sp8cemunky/docs/kinnett102-117?e=2217497/3084886",
+      "accessDate": "2013-10-26T18:03:29Z",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "G2D6SG33",
+    "version": 2455,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/G2D6SG33",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/G2D6SG33",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "multiple authors",
+      "parsedDate": "2014-12-11",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "G2D6SG33",
+      "version": 2455,
+      "itemType": "bookSection",
+      "title": "Haiku",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "multiple authors"
+        }
+      ],
+      "abstractNote": "A little about LED HAIKU: We selected 41 writers who delivered onto LED Baltimore 48 haikus. Will displayed them beautifully on top of enso drawings by Madison Smartt Bell. Now they are shining bright and colorful for everyone to see.\n\nOn December 11th, we will all gather to bask in their wordy glow one last time. For ten minutes without the obstruction of any ads. But first we will meet at The Blue Room of The Crown and enjoy three minute readings from many of the project's featured writers. \nLED haiku with Jen Michalski, Michael Kimball, Cort Bledsoe, Dave K., Tim Paggi, RM O'Brien, Sarah Jean Alexander, Joseph Young, Jenny O'Grady, Yatsura Still, Tracy Dimond, Timmy Reed, Madeleine Mysko, An Tran, Justin Sirois, CarlaJean Valluzzi, Stephanie M Barber, Mike Young, Christopher Morgan, Dylan Kinnett, Erik Wagner, Heather Rounds, Barbara DeCesare, Amanda McCormick, Adam Robinson, Scott McClanahan and many more",
+      "bookTitle": "LED Haiku",
+      "series": "",
+      "seriesNumber": "",
+      "volume": "",
+      "numberOfVolumes": "",
+      "edition": "",
+      "place": "",
+      "publisher": "Ink Press",
+      "date": "2014-12-11",
+      "pages": "",
+      "language": "",
+      "ISBN": "",
+      "shortTitle": "",
+      "url": "http://www.inkpressproductions.com/#!product/prd1/3361752361/led-haiku",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "EGG7VTHQ",
+    "version": 2548,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/EGG7VTHQ",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/EGG7VTHQ",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/AGWE744P",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2014-02-26",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "EGG7VTHQ",
+      "version": 2548,
+      "itemType": "webpage",
+      "title": "Housekeeping!",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "HOUSEKEEPING! a poem by Dylan Kinnett",
+      "websiteTitle": "Industry Night",
+      "websiteType": "",
+      "date": "2014-02-26",
+      "shortTitle": "",
+      "url": "http://industrynightliterary.com/2014/02/26/dylan-kinnett-housekeeping/",
+      "accessDate": "2014-02-27T17:46:20Z",
+      "language": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "GCH44VRW",
+    "version": 2556,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/GCH44VRW",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/GCH44VRW",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/JWIW5V4N",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "1996",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "GCH44VRW",
+      "version": 2556,
+      "itemType": "magazineArticle",
+      "title": "Jesus Falls a Fourth Time",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "poem by Dylan Kinnett",
+      "publicationTitle": "Savoy",
+      "volume": "",
+      "issue": "",
+      "date": "1996",
+      "pages": "",
+      "language": "",
+      "ISSN": "1522-6999",
+      "shortTitle": "",
+      "url": "http://web.archive.org/web/20001206190700/http://savoymag.net/poetry/index.html",
+      "accessDate": "2013-12-08T01:52:28Z",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "9JB35NGC",
+    "version": 2550,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/9JB35NGC",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/9JB35NGC",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2015-03-15",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "9JB35NGC",
+      "version": 2550,
+      "itemType": "webpage",
+      "title": "Kite",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "The Baltimore Ekphrasis Project is a collaboration between LED Baltimore and The Light Ekphrastic, scheduled to run on the Baltimore LED Art Billboard in March 2015.  Sixty-six Baltimore-area writers and artists have been chosen to  create new work inspired by the work of their partners. Final written works will be presented as excerpts on top of art on the LEDBaltimore Billboard, and in full in a special online issue of The Light Ekphrastic.",
+      "websiteTitle": "The Light Ekphrastic",
+      "websiteType": "Literary Website",
+      "date": "2015-03-15",
+      "shortTitle": "",
+      "url": "http://thelightekphrastic.com/fischer-kinnett/",
+      "accessDate": "",
+      "language": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "TDS44VRG",
+    "version": 2549,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/TDS44VRG",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/TDS44VRG",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/NQ7CD2N2",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2014-12-11",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "TDS44VRG",
+      "version": 2549,
+      "itemType": "artwork",
+      "title": "LED Billboard Haiku",
+      "creators": [
+        {
+          "creatorType": "artist",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "If you are driving / biking / walking / cartwheeling up Charles Street near Penn Station, look out for writing from Anne Frydman, Madison Smartt Bell, Jen Michalski, Michael Kimball, Justin Lawson Isett, Juliet Escoria, Jessica Anya Blau, Cort Bledsoe, Stephen Michael McDowell, Dave K., Tim Paggi, Julie Reiser, RM O’Brien, Sarah Jean Alexander, Joseph Young, Heather Rounds, Erik Wagner, Fitz Fitzgerald, Jenny O’Grady, Yatsura Still, Tracy Dimond, Timmy Reed, Madeleine Mysko, Elizabeth Hazen, Bob Schofield, Marion Winik, Juliana Grace, An Tran, Justin Sirois, CarlaJean Valluzzi, Stephanie M Barber, Mike Young, Christopher Morgan, Brian Joseph, Scott McClanahan, Dylan Kinnett, Barbara DeCesare, Mychael Zulauf, Dianna Dragonetti, Amanda McCormick, Adam Robinson, beautifully displayed on top of enso drawings by Madison Smartt Bell.\n#ledbaltimore",
+      "artworkMedium": "LED Bilboard, Haiku",
+      "artworkSize": "",
+      "date": "2014-12-11",
+      "language": "",
+      "shortTitle": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "url": "http://ledbaltimore.com/",
+      "accessDate": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "K998VFXF",
+    "version": 2549,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/K998VFXF",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/K998VFXF",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/Z3VTGKUR",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2014-04-11",
+      "numChildren": 3
+    },
+    "data": {
+      "key": "K998VFXF",
+      "version": 2549,
+      "itemType": "presentation",
+      "title": "Left of the Bank!",
+      "creators": [
+        {
+          "creatorType": "presenter",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "presentationType": "Poetry Reading",
+      "date": "2014-04-11",
+      "place": "Shepherdstown Public Library",
+      "meetingName": "",
+      "url": "http://nocategories.net/portfolio/left-of-the-bank/",
+      "accessDate": "",
+      "language": "",
+      "shortTitle": "",
+      "rights": "All rights reserved",
+      "extra": ""
+    }
+  },
+  {
+    "key": "PHR8X37D",
+    "version": 2549,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/PHR8X37D",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/PHR8X37D",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/7MFQ2EAP",
+        "type": "application/json",
+        "attachmentType": "text/html",
+        "attachmentSize": 26729
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2014-12-13",
+      "numChildren": 2
+    },
+    "data": {
+      "key": "PHR8X37D",
+      "version": 2549,
+      "itemType": "presentation",
+      "title": "Litscape 2014",
+      "creators": [
+        {
+          "creatorType": "presenter",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "",
+      "presentationType": "Spoken Word Performance",
+      "date": "2014-12-13",
+      "place": "",
+      "meetingName": "",
+      "url": "http://empcollective.org/2014/11/24/litscape/",
+      "accessDate": "2014-12-06T00:57:19Z",
+      "language": "",
+      "shortTitle": "",
+      "rights": "All rights reserved",
+      "extra": ""
+    }
+  },
+  {
+    "key": "MHJFCDUK",
+    "version": 2555,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/MHJFCDUK",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/MHJFCDUK",
+        "type": "text/html"
+      },
+      "attachment": {
+        "href": "https://api.zotero.org/users/570568/items/TE6D4RZ5",
+        "type": "application/json",
+        "attachmentType": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "1996",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "MHJFCDUK",
+      "version": 2555,
+      "itemType": "magazineArticle",
+      "title": "Lost Nation",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "a poem by Dylan Kinnett",
+      "publicationTitle": "Savoy",
+      "volume": "",
+      "issue": "",
+      "date": "1996",
+      "pages": "",
+      "language": "",
+      "ISSN": "1522-6999",
+      "shortTitle": "",
+      "url": "http://web.archive.org/web/20001206190700/http://savoymag.net/poetry/index.html",
+      "accessDate": "2013-12-08T01:52:36Z",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": ""
+    }
+  },
+  {
+    "key": "DB7WRAAI",
+    "version": 2541,
+    "library": {
+      "type": "user",
+      "id": 570568,
+      "name": "Dylan Kinnett",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/dylan_k",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/users/570568/publications/items/DB7WRAAI",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/dylan_k/items/DB7WRAAI",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "creatorSummary": "Kinnett",
+      "parsedDate": "2008-04-14",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "DB7WRAAI",
+      "version": 2541,
+      "itemType": "journalArticle",
+      "title": "Make Your Own Fun",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Dylan",
+          "lastName": "Kinnett"
+        }
+      ],
+      "abstractNote": "A poem by Dylan Kinnett",
+      "publicationTitle": "Welter",
+      "volume": "",
+      "issue": "",
+      "pages": "14",
+      "date": "2008-04-14",
+      "series": "",
+      "seriesTitle": "",
+      "seriesText": "",
+      "journalAbbreviation": "",
+      "language": "English",
+      "DOI": "",
+      "ISSN": "",
+      "shortTitle": "",
+      "url": "",
+      "accessDate": "",
+      "archive": "Langsdale Library at the University of Baltimore",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "LH1.B36 W45 2008",
+      "rights": "",
+      "extra": ""
+    }
+  }
+]

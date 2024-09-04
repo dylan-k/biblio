@@ -1,0 +1,114 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+<section id="zotero_bibliography" class="mt-100">
+  {{ $data := dict }}
+  {{ $zoteroKey := .Site.Params.zotero_api_key }}
+  {{ $url := printf "https://api.zotero.org/users/570568/publications/items/top?direction=asc&format=json&sort=title&key=%s" $zoteroKey }}
+  {{ with resources.GetRemote $url }}
+  {{ with .Err }}
+  <p>Bibliography data is currently unavailable.</p>
+  {{ else }}
+  {{ $data = .Content | transform.Unmarshal }}
+  {{ end }}
+  {{ else }}
+  <p>Unable to get remote resource.</p>
+  {{ end }}
+
+  {{ if $data }}
+  <!-- Normalize dates -->
+  {{ $normalizedData := slice }}
+  {{ range $data }}
+  {{ $date := .data.date }}
+  {{ if eq (len $date) 4 }}
+  <!-- Handle year-only date (e.g., "1998") -->
+  {{ $date = printf "%s-01-01" $date }}
+  {{ end }}
+  {{ $normalizedData = $normalizedData | append (dict "item" . "normalizedDate" $date) }}
+  {{ end }}
+
+  <!-- Sort by normalized date in descending order -->
+  {{ $sortedData := sort $normalizedData "normalizedDate" "desc" }}
+
+  <!-- Render the sorted data -->
+  {{ range $index, $entry := $sortedData }}
+  {{ $entry := .item }}
+  <article class="biblio-item">
+    <p>
+      <!-- Author -->
+      <span class="author">
+        {{ range $entry.data.creators }}
+        {{ if eq .creatorType "author" }}
+        {{ .lastName }}, {{ .firstName }}
+        {{ break }}
+        {{ end }}
+        {{ end }}
+      </span>
+
+      <!-- Title with link to source -->
+      <span class="title">
+        {{ if $entry.data.url }}
+        <cite><a href="{{ $entry.data.url }}">{{ $entry.data.title }}</a></cite>.
+        {{ else }}
+        <cite>{{ $entry.data.title }}</cite>.
+        {{ end }}
+      </span>
+
+      <!-- Title of container -->
+      {{ if $entry.data.publicationTitle }}
+      <span class="container-title">
+        <cite>{{ $entry.data.publicationTitle }}</cite>,
+      </span>
+      {{ end }}
+
+      <!-- Other contributors -->
+      {{ $contributors := slice }}
+      {{ range $entry.data.creators }}
+      {{ if eq .creatorType "contributor" }}with
+      {{ $contributors = $contributors | append (printf "%s %s" .firstName .lastName) }}
+      {{ end }}
+      {{ end }}
+      {{ if $contributors }}
+      <span class="contributors">
+        with {{ delimit $contributors ", " }}.
+      </span>
+      {{ end }}
+
+      <!-- Number -->
+      {{ if $entry.data.volume }}
+      <span class="volume">vol. {{ $entry.data.volume }}, </span>
+      {{ end }}
+      {{ if $entry.data.issue }}
+      <span class="issue">no. {{ $entry.data.issue }}, </span>
+      {{ end }}
+
+      <!-- Publisher -->
+      {{ if $entry.data.publisher }}
+      <span class="publisher">{{ $entry.data.publisher }}, </span>
+      {{ end }}
+
+      <!-- Place -->
+      {{ if $entry.data.place }}
+      <span class="place">{{ $entry.data.place }}, </span>
+      {{ end }}
+
+
+      <!-- Publication date -->
+      {{ if $entry.data.date }}
+      <span class="date">{{ substr $entry.data.date 0 4 }}.</span>
+      {{ end }}
+
+      <!-- Location -->
+      {{ if $entry.data.pages }}
+      <span class="pages">pp. {{ $entry.data.pages }}, </span>
+      {{ end }}
+    </p>
+  </article>
+  {{ end }}
+  {{ end }}
+</section>
+
+{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
