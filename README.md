@@ -608,24 +608,30 @@ Duplicate Jekyll's built-in "default.html" file in the _layouts directory. Name 
 Then replace the line `{{ content }}` in the file you just created. Replace it with something like:
 
 
-```html
-        <article>
-          {% for biblio in site.data.biblios %}
-            <p itemscope itemtype="http://schema.org/CreativeWork">
-              <meta itemprop="author" content="{{ biblio.author }}" /> 
-              <a href="{{ biblio.URL }}" itemprop="url">
-                <cite itemprop="name">{{ biblio.title }}</cite> 
-              </a>.
-              {% if biblio.genre %}
-                <span itemprop="genre">{{ biblio.genre }}</span>. 
-              {% endif %}
-              {% if biblio.event-place %}
-                <span itemprop="contentLocation">{{ biblio.event-place }}</span>. 
-              {% endif %}
-              <date itemprop="datePublished"> {% for item in biblio.issued %} {{  item[1] item[2] item[3] | join: '-' | append: '.' }} {% endfor %}</date>
-            </p>
-          {% endfor %}
-        </article>
+```liquid
+<main>
+  {% for publication in site.data.publications %}
+  <article itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="author" content="{{ publication.author }}" />
+    <a href="{{ publication.URL }}" itemprop="url">
+      <cite itemprop="name">{{ publication.title }}.</cite>
+    </a>
+    {% if publication.genre %}
+      <span itemprop="genre">{{ publication.genre }}</span>.
+    {% endif %}
+    {% if publication.event_place %}
+      <span itemprop="contentLocation">
+        {{ publication.event_place }}
+      </span>.
+    {% endif %}
+    <date itemprop="datePublished">
+      {% for item in publication.issued %}
+        {{ item | join: '-' }}
+      {% endfor %}
+    </date>.
+  </article>
+  {% endfor %}
+</main>```
 ```
 
 note: I wrote the above to configure the output according to my own needs, but yours may vary. You might want to tinker with the markup there, but there should be enough in this example to get you started.
@@ -641,9 +647,13 @@ Then, edit the index.html file. You want the template to be the one you just mad
 
 
 ```
+
 ---
+
+
 layout: biblio
 ---
+
 ```
 
 ### Step 4: Bob's Your Uncle
