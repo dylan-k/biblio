@@ -6,27 +6,33 @@ biblio
 ================================================================================
 
 Publish a bibliography online  
-using Zotero bibliography manager  
-and Hugo web content manager  
-to write semantic HTML5 with schema.org metadata.
+using Zotero bibliography manager.  
+Use Hugo web content manager  
+to publish the bibliography
+to semantic HTML5 with schema.org metadata.
 
 
-Work in Progress
---------------------------------------------------------------------------------
+This is still very much a **work in progress**.
+
+Currently I'm working to:
 
 1. Input: Clean up my messy data
-2. Output: Make a working example of a web page
+2. Output: Make a working example of a web page that displays Zotero bibliographic data, straight from the API, without having to use an intermediary export file.
 
 
 
 Storing Bibliography in Zotero
 ===============================================================================
 
+I'm gathering some notes about how to use Zotero for a list of works that may not fit the standard type of "journal article" or "book" items.
+
 
 Item Type
 --------------------------------------------------------------------------------
 
-As far as I know, no major citation style, including humanities styles like MHRA, Chicago, and MLA, talk about special rules for citing these. Moreover, for referencing, and thus a reference manager the form of publication is typically more important than a genre. A Poem in the New Yorker, for example, is a magazine article; a poem in an anthology is a book section; a poem in a more academically oriented journal may be a journal article; a poem you find in an archive is a manuscript. I don't see how adding a new item type helps with this type of thing -- if anything it confuses it.
+> As far as I know, no major citation style, including humanities styles like MHRA, Chicago, and MLA, talk about special rules for citing these. Moreover, for referencing, and thus a reference manager the form of publication is typically more important than a genre. A Poem in the New Yorker, for example, is a magazine article; a poem in an anthology is a book section; a poem in a more academically oriented journal may be a journal article; a poem you find in an archive is a manuscript. I don't see how adding a new item type helps with this type of thing -- if anything it confuses it.
+
+-- [Short Story as Item Type](https://forums.zotero.org/discussion/69097/short-story-as-item-type)
 
 
 Fields
@@ -47,15 +53,7 @@ When deciding how to cite your source, start by consulting the list of core elem
 
 Each element should be followed by the corresponding punctuation mark shown above.
 
-https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_formatting_and_style_guide.html
-
-
-How to Refactor to Page Bundles
---------------------------------------------------------------------------------
-
-`refactor-pages-to-page-bundles`
-Refactor all Markdown page files to page bundles (each page gets a portable, self contained folder with its assets)
-https://github.com/HugoBlox/awesome-hugo
+-- [Purdue OWL, MLA Formatting and Style Guide](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_formatting_and_style_guide.html)
 
 
 Lots of Zotero Resources
@@ -80,12 +78,16 @@ https://dvanoni.notion.site/79b17005bc374209b0f373b1a3cde0ae?v=cbaca2dbd8044d468
 
 
 
-BibLaTeX Overview
-===============================================================================
+BibLaTex for Arts and Humanities Works
+================================================================================
+
+While BibLaTeX may not have dedicated entry types for all arts and humanities works, it is flexible enough to allow authors to adapt existing types to meet their needs. By using fields like `type`, `howpublished`, and `abstract`, along with custom styles and plugins, scholars can effectively manage and cite a wide range of creative works.
 
 BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a wide range of sources for bibliographies and citations. These entry types are more extensive and detailed compared to traditional BibTeX, allowing for better customization and accuracy in referencing.
 
-### Strategies for Citing Arts and Humanities Works in BibLaTeX
+
+Strategies for Citing Arts and Humanities Works in BibLaTeX
+--------------------------------------------------------------------------------
 
 1. **Adapting Existing Entry Types:**
 
@@ -100,8 +102,7 @@ BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a
 
     **Example:**
 
-    ```
-    bibtexCopy code
+    ```bibtex
 
     `@misc{Kinnett2023Painting,
       author = {Dylan Kinnett},
@@ -130,8 +131,7 @@ BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a
 
   - **Live Performance:**
 
-    ```
-    bibtexCopy code
+    ```bibtex
 
     `@misc{Kinnett2023LivePerformance,
       author = {Dylan Kinnett},
@@ -148,8 +148,7 @@ BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a
 
   - **Physical Artwork:**
 
-    ```
-    bibtexCopy code
+    ```bibtex
 
     `@misc{Kinnett2023Artwork,
       author = {Dylan Kinnett},
@@ -165,10 +164,9 @@ BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a
 
   - **Media Work (Video/Audio):**
 
-    ```
-    bibtexCopy code
+    ```bibtex
 
-    `@online{Kinnett2023Video,
+    @online{Kinnett2023Video,
       author = {Dylan Kinnett},
       title = {Title of the Video},
       year = {2023},
@@ -177,24 +175,16 @@ BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a
       howpublished = {Published on Vimeo, part of XYZ series},
       abstract = {Description of the video content, duration, etc.}
     }
-    `
 
     ```
 
-### Conclusion
 
-While BibLaTeX may not have dedicated entry types for all arts and humanities works, it is flexible enough to allow authors to adapt existing types to meet their needs. By using fields like `type`, `howpublished`, and `abstract`, along with custom styles and plugins, scholars can effectively manage and cite a wide range of creative works.
-
-4o
-
+Standard Entry Types
+--------------------------------------------------------------------------------
 
 Below is the complete list of standard entry types supported by BibLaTeX, along with brief descriptions for each:
 
----
 
-
-**Standard Entry Types**
---------------------------------------------------------------------------------
 
 ### 1. `@article`
 
@@ -481,10 +471,8 @@ A work with an author and title, but not formally published.
   - *Required:* `author`, `title`, `year`/`date`
   - *Optional:* `subtitle`, `titleaddon`, `language`, `howpublished`, `note`, `location`, `month`, `addendum`, `pubstate`, `url`, `urldate`
 
----
 
-
-**Legacy Entry Types**
+Legacy Entry Types
 --------------------------------------------------------------------------------
 
 BibLaTeX also supports legacy BibTeX entry types for compatibility purposes:
@@ -532,7 +520,7 @@ Treated as an alias for `@online`.
 ---
 
 
-**Custom Entry Types**
+Custom Entry Types
 --------------------------------------------------------------------------------
 
 BibLaTeX allows the creation of custom entry types if needed. You can define your own types and corresponding fields to suit specific referencing requirements by modifying the BibLaTeX configuration.
@@ -566,7 +554,7 @@ Here is how you might cite an online article:
 
 
 
-OLD README
+OLD README (Jekyll Version)
 ================================================================================
 
 HTML5 Bibliography with Schema.org Metadata

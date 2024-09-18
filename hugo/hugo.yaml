@@ -9,8 +9,6 @@ caches:
     maxAge: 0
   getresource:
     maxAge: 0
-# Use a special config file to store your zotero API key
+# Use a seperate config file to store your zotero API key
+# e.g. config/_default/params.yaml
 # ignore this file in .gitignore to prevent sharing it
-# module:
-#   imports:
-#     - path: "zotero.yaml"
