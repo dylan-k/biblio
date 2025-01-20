@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 
 _docs/
-**/zoterokey.yaml
+zoterokey.yaml
 hugo/.hugo_build.lock
 hugo/public/*
+config/_default/params.yaml
