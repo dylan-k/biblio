@@ -1,0 +1,26 @@
+{
+  // YAML Sort - Visual Studio Extension
+  // https://marketplace.visualstudio.com/items?itemName=PascalReitermann93.vscode-yaml-sort
+  // Define a custom sort order
+  // "vscode-yaml-sort.customSortKeywords_2": [
+  //   "id",
+  //   "date",
+  //   "year",
+  //   "title",
+  //   "name",
+  //   "summary",
+  //   "abstract",
+  //   "description"
+  // ],
+  // Register YAML Sort extension as VS Code formatter for YAML
+  // "[yaml]": {
+  //   "editor.defaultFormatter": "PascalReitermann93.vscode-yaml-sort"
+  // },
+  // "editor.formatOnSave": true,
+  // format YAML files on save
+  // set sortOnSave to 0. Use 1, 2 or 3 for custom sort.
+  // "vscode-yaml-sort.sortOnSave": 2,
+  // "vscode-yaml-sort.forceQuotes": true,
+  // "vscode-yaml-sort.indent": 2,
+  // "vscode-yaml-sort.quotingType": "\""
+}
