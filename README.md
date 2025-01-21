@@ -14,7 +14,7 @@ goals:
 
 I've experimeted toward these goals variously. My current solution seems to be:
   - manage a `.bib` file using JabRef
-  - convert the .bib file to YAML
+  - convert the .bib file to YAML (or export to [.cff](https://citation-file-format.github.io/))
   - hugo CMS can parse the data into web content
 
 Along the way, I experimented with Jekyll, Zotero, and even Notion.
