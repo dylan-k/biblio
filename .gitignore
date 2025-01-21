@@ -3,5 +3,7 @@
 _docs/
 zoterokey.yaml
 hugo/.hugo_build.lock
-hugo/public/*
+public/
 config/_default/params.yaml
+public/*
+.hugo_build.lock
