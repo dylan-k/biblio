@@ -5,29 +5,156 @@
 biblio
 ================================================================================
 
-Publish a bibliography online  
-using Zotero bibliography manager.  
-Use Hugo web content manager  
-to publish the bibliography
-to semantic HTML5 with schema.org metadata.
+This project is very much a **work in progress**.
+
+goals:
+  - manage bibliographic data / citations in a citation manager
+  - learn to cite "unusual" sources like performance art, digital media, etc.
+  - efficient workflow for publishing to the web, using citation manger data
+
+I've experimeted toward these goals variously. My current solution seems to be:
+  - manage a `.bib` file using JabRef
+  - convert the .bib file to YAML
+  - hugo CMS can parse the data into web content
+
+Along the way, I experimented with Jekyll, Zotero, and even Notion.
 
 
-This is still very much a **work in progress**.
 
-Currently I'm working to:
-
-1. Input: Clean up my messy data
-2. Output: Make a working example of a web page that displays Zotero bibliographic data, straight from the API, without having to use an intermediary export file.
-
-
-
-Storing Bibliography in Zotero
+Managing Bibliography Data with a Citaion Manager
 ===============================================================================
 
-I'm gathering some notes about how to use Zotero for a list of works that may not fit the standard type of "journal article" or "book" items.
+Zotero and JabRef are both free and popular applications for keeping track of a bibliography/citations.
+
+I'm starting to prefer JabRef but they're both easy enough to get started with. I prefer JabRef because it stores my data as a `.bib` file (see below), which is much easier to work with in many other contexts.
+
+[Getting started with JabRef](https://docs.jabref.org/getting-started)
+: JabRef is open source software to manage references and the full text of papers. The native file
+format used by JabRef is BibTeX, the standard LaTeX bibliography format. [A guide](https://www.mcgill.ca/library/files/library/jabref_guide_2016.pdf).
+
+[Awesome Zotero](https://github.com/MohamedElashri/awesome-zotero)
+: A reference to all awesome additional tweaks that make Zotero better.
 
 
-Item Type
+
+Storing Bibliography Data in BibLaTex Database Files
+===============================================================================
+
+A BibLaTex database file (`.bib` file) is a plain text file [format](https://www.bibtex.com/g/bibtex-format/) used to store bibliographic information for references, such as books, articles, and other sources. It follows a structured format where each entry is assigned a unique identifier and contains fields like `author`, `title`, `year`, and more.
+
+When used with a citation manager application or an authoring environment, the `.bib` file provides a versatile and efficient way to manage references for documents and to quickly present those references in various formats.
+
+Example entry:
+
+```bibtex
+@book{Doe2023Example,
+  author = "Jane Doe",
+  title = "Introduction to Example Studies",
+  year = 2023
+}
+```
+
+  - `@book`: This is the **entry type**. Specifies that this entry is a book. Other entry types are described below.
+
+  - `Doe2023Example`: This is the **citation key**. It _uniquely identifies_ the entry in the .bib file and is used when citing the source. Citation keys should be concise, descriptive, and _unique_.
+
+  - `author = "Jane Doe",`: This is the **author** field. Specifies the author(s) of the book. If there are multiple authors, separate them with and (e.g., `Jane Doe and John Smith`).
+
+  - `title = "Introduction to Example Studies"`: This is the **title** field. Specifies the title of the book. Titles should be in title case, and special characters should be enclosed in curly braces to preserve formatting.
+
+  - `year = 2023`: This is the **year** field. It specifies the publication year of the book. This field is required unless the date field is used.
+
+  - `date = "2023-01-21"` (alternative to year): This is the **date** field. It specifies the publication date in ISO format (e.g., "2023-01-21") and allows for more precision if needed.
+
+This is just a [minimal working example](https://stackoverflow.com/help/minimal-reproducible-example). There's a lot more you can do, by mnixing and matching different types and fields.
+
+
+BibLaTeX Entry Fields
+-------------------------------------------------------------------------------
+
+Many [other fields](https://www.bibtex.com/format/fields/) are available.
+
+The **required fields** for each type are those necessary for the entry to be processed correctly. **Optional fields** provide additional information and can improve the completeness and accuracy of the citation. The availability and use of fields may also depend on the bibliography style you are using.
+
+
+BibLaTeX Entry Types
+-------------------------------------------------------------------------------
+
+When using BibLaTeX to manage bibliographies, each reference source is assigned a `type`. Below is an overview of the "regular entry types" supported by the default BibLaTeX data model. While "non-standard types" can also be used, some environments may treat them as the `@misc` type, which can lead to inconsistent results. To ensure consistency, choose one of the regular entry types. Consider the nature of each source and select the type that most closely matches it.
+
+  - [List of BibTeX entry types [with examples]](https://www.bibtex.com/e/entry-types/)
+  - [BibLaTex Cheat Sheet](https://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf)
+  - [Page 7 of biblatex documentation](https://mirrors.ibiblio.org/pub/mirrors/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf#page=7)
+
+
+Below is the complete list of standard entry types supported by BibLaTeX, along with brief descriptions for each:
+
+Material from journals, magazines & newspapers:
+
+  - `@article` journal, magazine or newspaper article
+  - `@periodical` whole issue of a periodical
+  - `@suppperiodical` supplemental material in periodical
+
+Material from single-authored or co-authored books:
+
+  - `@inbook` book part with own title
+  - `@suppbook` supplemental material in book
+  - `@bookinbook` originally published as standalone book
+  - `@book` single-volume book by author(s) of whole
+  - `@mvbook` multi-volume book
+
+Material from edited anthologies:
+  - `@incollection` contribution to anthology
+  - `@suppcollection` supplemental material in anthology
+  - `@collection` single-volume edited anthology
+  - `@mvcollection` multi-volume collection
+
+Material from conference proceedings:
+
+  - `@inproceedings` article in conference proceedings
+  - `@proceedings` single-volume conference proceedings
+  - `@mvproceedings` multi-volume conference proceedings
+
+Material from works of reference:
+
+  - `@inreference` article in a reference work
+  - `@reference` single-volume work of reference
+  - `@mvreference` multi-volume reference work
+
+Material from technical & institutional publications:
+
+  - `@manual` technical or other documentation
+  - `@report` institutional report or white paper
+  - `@patent` patent or patent request
+  - `@thesis` work completed to fulfil degree requirement
+
+Material from online, informal & other sources:
+
+  - `@online` inherently online source
+  - `@booklet` informally published book
+  - `@unpublished` work not formally published
+  - `@misc` last resort (check manual first!)
+
+Other types, variously supported:
+
+  - `@artwork`
+  - `@audio`
+  - `@bibnote`
+  - `@commentary`
+  - `@image`
+  - `@jurisdiction`
+  - `@legislation`
+  - `@legal`
+  - `@letter`
+  - `@movie`
+  - `@music`
+  - `@performance`
+  - `@review`
+  - `@standard`
+  - `@video`
+
+
+Strategies for Citing Arts and Humanities Works in BibLaTeX
 --------------------------------------------------------------------------------
 
 > As far as I know, no major citation style, including humanities styles like MHRA, Chicago, and MLA, talk about special rules for citing these. Moreover, for referencing, and thus a reference manager the form of publication is typically more important than a genre. A Poem in the New Yorker, for example, is a magazine article; a poem in an anthology is a book section; a poem in a more academically oriented journal may be a journal article; a poem you find in an archive is a manuscript. I don't see how adding a new item type helps with this type of thing -- if anything it confuses it.
@@ -35,37 +162,31 @@ Item Type
 -- [Short Story as Item Type](https://forums.zotero.org/discussion/69097/short-story-as-item-type)
 
 
-Fields
---------------------------------------------------------------------------------
+The selection of BibLaTeX "regular" types and fields shows some preference for _printed_ or _physical_ works, as these are most often referenced in a bibliography. That doesn't mean you cannot cite a performance, conceptual artwork or a mixed-media VR experience.
 
-When deciding how to cite your source, start by consulting the list of core elements. These are the general pieces of information that MLA suggests including in each Works Cited entry. In your citation, the elements should be listed in the following order:
-
-  - Author.
-  - Title of source.
-  - Title of container,
-  - Other contributors,
-  - Version,
-  - Number,
-  - Publisher,
-  - Publication date,
-  - Location.
+Below are strategies and examples for effectively citing diverse creative works:
 
 
-Each element should be followed by the corresponding punctuation mark shown above.
+### Adapt Entry Types
 
--- [Purdue OWL, MLA Formatting and Style Guide](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_formatting_and_style_guide.html)
-
-
-Lots of Zotero Resources
---------------------------------------------------------------------------------
-
-Awesome Zotero
-A reference to all awesome additional tweaks that make Zotero better.
-https://github.com/MohamedElashri/awesome-zotero
+  - `@misc`: A versatile entry type for sources that don't fit standard categories.
+  - `@unpublished`: For works not formally published, such as live performances or artworks.
+  - `@online`: Best for digital media like videos, podcasts, or websites.
+  - Custom Types: You can define unofficial types, though support may vary across tools. For example [the JabRef citation manager has settings for creating custom types](https://docs.jabref.org/setup/customentrytypes).
 
 
-Bibliography in Notion
---------------------------------------------------------------------------------
+### Adapt Data Fields
+
+  - `type`: Specify the nature of the work (e.g., "Painting," "Live Performance").
+  - `howpublished`: Provide details about the medium or venue (e.g., "Oil on canvas," "Exhibited at XYZ Gallery").
+  - `note` or `abstract`: Add contextual details, performance descriptions, or medium specifics.
+
+
+
+Managing Bibliography Data with Notion
+===============================================================================
+
+Notion is a tool for building databases, and a bibliography is essentially a database. You can even integrate a Notion database with a citation manager like Zotero.
 
 official github for the Notero plugin for Zotero
 https://github.com/dvanoni/notero
@@ -78,518 +199,157 @@ https://dvanoni.notion.site/79b17005bc374209b0f373b1a3cde0ae?v=cbaca2dbd8044d468
 
 
 
-BibLaTex for Arts and Humanities Works
-================================================================================
-
-While BibLaTeX may not have dedicated entry types for all arts and humanities works, it is flexible enough to allow authors to adapt existing types to meet their needs. By using fields like `type`, `howpublished`, and `abstract`, along with custom styles and plugins, scholars can effectively manage and cite a wide range of creative works.
-
-BibLaTeX offers a comprehensive and flexible set of entry types to accommodate a wide range of sources for bibliographies and citations. These entry types are more extensive and detailed compared to traditional BibTeX, allowing for better customization and accuracy in referencing.
+Presenting Bibliography Data with Hugo
+===============================================================================
 
 
-Strategies for Citing Arts and Humanities Works in BibLaTeX
+From JabRef / BibLaTex
 --------------------------------------------------------------------------------
 
-1. **Adapting Existing Entry Types:**
+A very standard way to store bibliographic data is within a .bib file. Many publishers rely on this format, and it's easy to keep under version control.
 
-    - **`@misc`:** This is the most flexible entry type and can be adapted for almost any source that doesn't fit neatly into other categories.
-    - **`@unpublished` or `@manuscript`:** These can be used for works that are not formally published, such as live performances or artworks.
-    - **`@online`:** Suitable for digital media works like videos, podcasts, or websites.
-    - **`@audio`, `@video`, `@artwork`:** Some communities or individual users create custom entry types, though these are not officially supported by BibLaTeX.
-2. **Using the `type` or `howpublished` Fields:**
+Hugo, however, cannot read from this format. It can read from YAML though. A simple fix is to convert your `.bib` file to YAML, using `pandoc`
 
-    - The `type` field can be used to specify the type of work (e.g., "Painting," "Live Performance," "Video Installation").
-    - The `howpublished` field can provide details about the medium (e.g., "Oil on canvas," "Sculpture," "Digital video").
-
-    **Example:**
-
-    ```bibtex
-
-    `@misc{Kinnett2023Painting,
-      author = {Dylan Kinnett},
-      title = {Untitled Artwork},
-      year = {2023},
-      type = {Oil on canvas},
-      howpublished = {Exhibited at the XYZ Gallery, New York, NY}
-    }
-    `
-
-    ```
-
-3. **Using the `note` or `abstract` Fields:**
-
-    - These fields can be used to include additional information about the work, such as context, details about the performance, or descriptions of the medium.
-4. **Extending BibLaTeX with Custom Styles:**
-
-    - Some users create custom BibLaTeX styles or extend existing ones to better accommodate the needs of humanities and arts citation practices. This involves modifying the `.bst` file or using a LaTeX package that allows for more customization.
-    - **Better BibTeX for Zotero** can be configured to support custom citation keys and fields, making it easier to manage non-traditional sources.
-5. **Referencing Manuals and Guides:**
-
-    - Scholars often consult citation manuals specific to their field, such as the *MLA Handbook* or *Chicago Manual of Style*, and then adapt BibLaTeX entries accordingly.
-    - In cases where BibLaTeX does not natively support a citation format, these manuals can provide guidance on how to structure citations using the available fields.
-
-### Example Adaptations for Various Works
-
-  - **Live Performance:**
-
-    ```bibtex
-
-    `@misc{Kinnett2023LivePerformance,
-      author = {Dylan Kinnett},
-      title = {Performance Title},
-      year = {2023},
-      type = {Live Performance},
-      venue = {XYZ Theater, Baltimore, MD},
-      howpublished = {Part of the "Performance Art Series"},
-      abstract = {Description of the performance, setlist, etc.}
-    }
-    `
-
-    ```
-
-  - **Physical Artwork:**
-
-    ```bibtex
-
-    `@misc{Kinnett2023Artwork,
-      author = {Dylan Kinnett},
-      title = {Artwork Title},
-      year = {2023},
-      type = {Sculpture},
-      howpublished = {Bronze, 6 ft. x 3 ft., exhibited at ABC Gallery, New York, NY},
-      abstract = {Description of the artwork, exhibition details, etc.}
-    }
-    `
-
-    ```
-
-  - **Media Work (Video/Audio):**
-
-    ```bibtex
-
-    @online{Kinnett2023Video,
-      author = {Dylan Kinnett},
-      title = {Title of the Video},
-      year = {2023},
-      url = {http://example.com/video},
-      type = {Digital Video},
-      howpublished = {Published on Vimeo, part of XYZ series},
-      abstract = {Description of the video content, duration, etc.}
-    }
-
-    ```
-
-
-Standard Entry Types
---------------------------------------------------------------------------------
-
-Below is the complete list of standard entry types supported by BibLaTeX, along with brief descriptions for each:
-
-
-
-### 1. `@article`
-
-**Description:**
-An article from a journal, magazine, newspaper, or other periodical publication.
-
-**Fields:**
-  - *Required:* `author`, `title`, `journal`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `editor`, `translator`, `annotator`, `commentator`, `journalsubtitle`, `issuetitle`, `issuesubtitle`, `language`, `origlanguage`, `series`, `volume`, `number`, `eid`, `issue`, `month`, `pages`, `version`, `note`, `issn`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 2. `@book`
-
-**Description:**
-A complete, published book.
-
-**Fields:**
-  - *Required:* `author`/`editor`, `title`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `maintitle`, `mainsubtitle`, `maintitleaddon`, `language`, `origlanguage`, `volume`, `part`, `edition`, `volumes`, `series`, `number`, `note`, `publisher`, `location`, `isbn`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 3. `@mvbook`
-
-**Description:**
-A multi-volume **book**. Use this type for citing the entire work as a whole.
-
-**Fields:**
-Same as `@book` with additional handling for multiple volumes.
-
----
-
-### 4. `@inbook`
-
-**Description:**
-A part of a book, which may be a chapter, section, or other subdivision that is titled and/or numbered.
-
-**Fields:**
-  - *Required:* `author`/`editor`, `title`, `booktitle`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `maintitle`, `mainsubtitle`, `maintitleaddon`, `booksubtitle`, `booktitleaddon`, `language`, `origlanguage`, `volume`, `part`, `edition`, `volumes`, `series`, `number`, `note`, `publisher`, `location`, `chapter`, `pages`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 5. `@bookinbook`
-
-**Description:**
-A part of a book which forms a self-contained unit and is also separately published as a book.
-
-**Fields:**
-Same as `@inbook`.
-
----
-
-### 6. `@suppbook`
-
-**Description:**
-Supplemental material in a book.
-
-**Fields:**
-Same as `@inbook`.
-
----
-
-### 7. `@booklet`
-
-**Description:**
-A printed and bound work without a named publisher or sponsoring institution.
-
-**Fields:**
-  - *Required:* `author`, `title`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `language`, `howpublished`, `type`, `note`, `location`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 8. `@collection`
-
-**Description:**
-A collection of works (such as articles) published as a single book, where the works have no individual authors but the collection has an editor.
-
-**Fields:**
-  - *Required:* `editor`, `title`, `year`/`date`
-  - *Optional:* Similar to `@book`
-
----
-
-### 9. `@mvcollection`
-
-**Description:**
-A multi-volume **collection**. Use for citing the entire collection as a whole.
-
-**Fields:**
-Same as `@collection` with additional handling for multiple volumes.
-
----
-
-### 10. `@incollection`
-
-**Description:**
-A contribution to a collection, which can be a chapter in an edited book.
-
-**Fields:**
-  - *Required:* `author`, `title`, `booktitle`, `year`/`date`
-  - *Optional:* Similar to `@inbook`
-
----
-
-### 11. `@suppcollection`
-
-**Description:**
-Supplemental material in a collection.
-
-**Fields:**
-Same as `@incollection`.
-
----
-
-### 12. `@manual`
-
-**Description:**
-Technical or other documentation.
-
-**Fields:**
-  - *Required:* `title`
-  - *Optional:* `author`, `editor`, `subtitle`, `titleaddon`, `language`, `edition`, `type`, `series`, `number`, `version`, `note`, `organization`, `publisher`, `location`, `month`, `year`/`date`, `isbn`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 13. `@misc`
-
-**Description:**
-A fallback type for entries which do not fit into any other type.
-
-**Fields:**
-  - *Required:* `author`/`editor`, `title`, `year`/`date`
-  - *Optional:* All optional fields from other types as applicable.
-
----
-
-### 14. `@online`
-
-**Description:**
-An online resource.
-
-**Fields:**
-  - *Required:* `author`/`editor`, `title`, `year`/`date`, `url`
-  - *Optional:* `subtitle`, `titleaddon`, `language`, `version`, `note`, `organization`, `month`, `urldate`, `addendum`, `pubstate`
-
----
-
-### 15. `@patent`
-
-**Description:**
-A patent or patent request.
-
-**Fields:**
-  - *Required:* `author`, `title`, `number`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `type`, `version`, `location`, `note`, `month`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 16. `@periodical`
-
-**Description:**
-An entire issue of a periodical, such as a special issue.
-
-**Fields:**
-  - *Required:* `editor`, `title`, `year`/`date`
-  - *Optional:* `subtitle`, `issuetitle`, `issuesubtitle`, `language`, `series`, `volume`, `number`, `issue`, `month`, `note`, `issn`, `publisher`, `location`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 17. `@suppperiodical`
-
-**Description:**
-Supplemental material in a periodical.
-
-**Fields:**
-Same as `@article`.
-
----
-
-### 18. `@proceedings`
-
-**Description:**
-A conference proceedings as a whole.
-
-**Fields:**
-  - *Required:* `title`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `editor`, `eventtitle`, `eventdate`, `venue`, `language`, `volume`, `part`, `series`, `number`, `note`, `organization`, `publisher`, `location`, `month`, `isbn`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 19. `@mvproceedings`
-
-**Description:**
-A multi-volume conference proceedings.
-
-**Fields:**
-Same as `@proceedings` with additional handling for multiple volumes.
-
----
-
-### 20. `@inproceedings`
-
-**Description:**
-An article in a conference proceedings.
-
-**Fields:**
-  - *Required:* `author`, `title`, `booktitle`, `year`/`date`
-  - *Optional:* Similar to `@incollection`
-
----
-
-### 21. `@reference`
-
-**Description:**
-A work of reference, such as an encyclopedia or dictionary.
-
-**Fields:**
-Same as `@collection`.
-
----
-
-### 22. `@mvreference`
-
-**Description:**
-A multi-volume work of reference.
-
-**Fields:**
-Same as `@reference` with additional handling for multiple volumes.
-
----
-
-### 23. `@inreference`
-
-**Description:**
-An article in a work of reference.
-
-**Fields:**
-Same as `@incollection`.
-
----
-
-### 24. `@report`
-
-**Description:**
-A technical report, white paper, or other report issued by an institution.
-
-**Fields:**
-  - *Required:* `author`, `title`, `type`, `institution`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `number`, `version`, `series`, `location`, `month`, `note`, `isbn`, `issn`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 25. `@set`
-
-**Description:**
-A set of entries that are related and should be treated as a single reference.
-
-**Fields:**
-  - *Required:* `entryset`
-  - *Optional:* All optional fields as applicable.
-
----
-
-### 26. `@thesis`
-
-**Description:**
-A thesis or dissertation.
-
-**Fields:**
-  - *Required:* `author`, `title`, `type`, `institution`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `language`, `location`, `month`, `note`, `isbn`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
-
----
-
-### 27. `@unpublished`
-
-**Description:**
-A work with an author and title, but not formally published.
-
-**Fields:**
-  - *Required:* `author`, `title`, `year`/`date`
-  - *Optional:* `subtitle`, `titleaddon`, `language`, `howpublished`, `note`, `location`, `month`, `addendum`, `pubstate`, `url`, `urldate`
-
-
-Legacy Entry Types
---------------------------------------------------------------------------------
-
-BibLaTeX also supports legacy BibTeX entry types for compatibility purposes:
-
-### 1. `@conference`
-
-**Description:**
-Treated as an alias for `@inproceedings`.
-
----
-
-### 2. `@electronic`
-
-**Description:**
-Treated as an alias for `@online`.
-
----
-
-### 3. `@mastersthesis`
-
-**Description:**
-Treated as an alias for `@thesis` with `type = {Master's thesis}`.
-
----
-
-### 4. `@phdthesis`
-
-**Description:**
-Treated as an alias for `@thesis` with `type = {PhD thesis}`.
-
----
-
-### 5. `@techreport`
-
-**Description:**
-Treated as an alias for `@report`.
-
----
-
-### 6. `@www`
-
-**Description:**
-Treated as an alias for `@online`.
-
----
-
-
-Custom Entry Types
---------------------------------------------------------------------------------
-
-BibLaTeX allows the creation of custom entry types if needed. You can define your own types and corresponding fields to suit specific referencing requirements by modifying the BibLaTeX configuration.
-
----
-
-**Note:**
-  - The **required fields** are those necessary for the entry to be processed correctly.
-  - **Optional fields** provide additional information and can improve the completeness and accuracy of the citation.
-  - The availability and use of fields may also depend on the bibliography style you are using.
-
-**References for Further Reading:**
-  - For a detailed explanation of each field and type, refer to the official BibLaTeX documentation: [BibLaTeX Documentation](http://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf)
-  - For guidance on choosing the correct entry type, consider the nature of the source material and consult any specific style guidelines relevant to your work.
-
-**Example Usage:**
-Here is how you might cite an online article:
-
-```bibtex
-@online{Smith2021,
-  author = {John Smith},
-  title = {Understanding Quantum Computing},
-  year = {2021},
-  url = {https://example.com/quantum-computing},
-  urldate = {2021-06-15},
-  note = {Accessed: 2021-06-15}
-}
+```bash
+pandoc "input file.bib" -s -f biblatex -t markdown > "output file.yaml"
 ```
 
----
+Once you have YAML data, you can use it as a [Hugo data source](https://gohugo.io/content-management/data-sources/).
+
+
+From Zotero / JSON
+--------------------------------------------------------------------------------
+
+Hugo can read your Zotero data via the Zotero API. This way, you don't have to manage any special files in your hugo project, and your bibliography is up-to-date with Zotero every time you rebuild your hugo site. It's a nice way to go, if you use Zotero.
+
+Here's a basic example of a hugo template that can do this. Note the need for the zoero API key, and `<USERID>` which you shoudl store in a hugo config file.
+
+```html
+  <main id="zotero_bibliography" class="mt-100">
+    <h1>Bibliography</h1>
+    {{ $data := dict }}
+    {{ $zoteroKey := .Site.Params.zotero_api_key }}
+    {{ $url := printf "https://api.zotero.org/users/<USERID>/publications/items/top?direction=asc&format=json&sort=title&key=%s" $zoteroKey }}
+    {{ with resources.GetRemote $url }}
+    {{ with .Err }}
+    <p>Bibliography data is currently unavailable.</p>
+    {{ else }}
+    {{ $data = .Content | transform.Unmarshal }}
+    {{ end }}
+    {{ else }}
+    <p>Unable to get remote resource.</p>
+    {{ end }}
+
+    {{ if $data }}
+    <!-- Normalize dates -->
+    {{ $normalizedData := slice }}
+    {{ range $data }}
+    {{ $date := .data.date }}
+    {{ if eq (len $date) 4 }}
+    <!-- Handle year-only date (e.g., "1998") -->
+    {{ $date = printf "%s-01-01" $date }}
+    {{ end }}
+    {{ $normalizedData = $normalizedData | append (dict "item" . "normalizedDate" $date) }}
+    {{ end }}
+
+    <!-- Sort by normalized date in descending order -->
+    {{ $sortedData := sort $normalizedData "normalizedDate" "desc" }}
+
+    <!-- Render the sorted data -->
+    {{ range $index, $entry := $sortedData }}
+    {{ $entry := .item }}
+    <article class="biblio-item">
+      <p>
+        <!-- Author -->
+        <span class="author">
+          {{ range $entry.data.creators }}
+          {{ if eq .creatorType "author" }}
+          {{ .lastName }}, {{ .firstName }}
+          {{ break }}
+          {{ end }}
+          {{ end }}
+        </span>
+
+        <!-- Title with link to source -->
+        <span class="title">
+          {{ if $entry.data.url }}
+          <cite><a href="{{ $entry.data.url }}">{{ $entry.data.title }}</a></cite>.
+          {{ else }}
+          <cite>{{ $entry.data.title }}</cite>.
+          {{ end }}
+        </span>
+
+        <!-- Title of container -->
+        {{ if $entry.data.publicationTitle }}
+        <span class="container-title">
+          <cite>{{ $entry.data.publicationTitle }}</cite>,
+        </span>
+        {{ end }}
+
+        <!-- Other contributors -->
+        {{ $contributors := slice }}
+        {{ range $entry.data.creators }}
+        {{ if eq .creatorType "contributor" }}with
+        {{ $contributors = $contributors | append (printf "%s %s" .firstName .lastName) }}
+        {{ end }}
+        {{ end }}
+        {{ if $contributors }}
+        <span class="contributors">
+          with {{ delimit $contributors ", " }}.
+        </span>
+        {{ end }}
+
+        <!-- Number -->
+        {{ if $entry.data.volume }}
+        <span class="volume">vol. {{ $entry.data.volume }}, </span>
+        {{ end }}
+        {{ if $entry.data.issue }}
+        <span class="issue">no. {{ $entry.data.issue }}, </span>
+        {{ end }}
+
+        <!-- Publisher -->
+        {{ if $entry.data.publisher }}
+        <span class="publisher">{{ $entry.data.publisher }}, </span>
+        {{ end }}
+
+        <!-- Place -->
+        {{ if $entry.data.place }}
+        <span class="place">{{ $entry.data.place }}, </span>
+        {{ end }}
+
+
+        <!-- Publication date -->
+        {{ if $entry.data.date }}
+        <span class="date">{{ substr $entry.data.date 0 4 }}.</span>
+        {{ end }}
+
+        <!-- Location -->
+        {{ if $entry.data.pages }}
+        <span class="pages">pp. {{ $entry.data.pages }}, </span>
+        {{ end }}
+      </p>
+    </article>
+    {{ end }}
+    {{ end }}
+  </main>
+```
 
 
 
-OLD README (Jekyll Version)
+Presenting Bibliography Data with Jekyll
 ================================================================================
 
-HTML5 Bibliography with Schema.org Metadata
+Using Jekyll static CMS, you can create an HTML5 Bibliography with Schema.org Metadata
 
 
-I wanted to publish a bibliography of my writings to the web. I wanted that page to have good, semantic markup, according to the schema.org standards and examples. While my bibliography manager, Zotero, has an excellent HTML export ability, the HTML wasn't exactly what I had in mind, so I rolled my own.
+  - Step 1: Create a bibliography  
+  Use Zotero, or whatever you like to create a bibliography. It shouldn't really matter what you use, so long as you can do...
 
+  - Step 2: Create a JSON or YAML file that contains the bibliography
+Most citation managers can export json, but if you prefer to work with YAML you can convert it e.g. jsontoyaml.com
+put your YAML in a file like biblios.yml in the _data directory (see also: http://www.madhur.co.in/blog/2013/11/05/makingmostdatadirectory.html)
 
-Ingredients
---------------------------------------------------------------------------------
-
-  - Zotero bibliography manager
-  - Jekyll static web generator
-  - familiarity with [schema.org microdata](http://schema.org/docs/gs.html#microdata_why) and
-  - familiarity with JSON and YAML
-
-
-Procedure
---------------------------------------------------------------------------------
-
-### Step 1: Create a bibliography
-
-Use Zotero, or whatever you like to create a bibliography. It shouldn't really matter what you use, so long as you can do...
-
-### Step 2: Create a YAML version of the bibliography
-
-I would prefer to say "export bibliography to YAML" except for two things. First, YAML and JSON are essentially the same thing and second, it's easy to convert from the JSON that Zotero provides into YAML with things like jsontoyaml.com
-
-so do this:
-  - export JSON bibliography from Zotero
-  - convert JSON into YAML
-  - check your YAML with a validator just to be sure it's good.
-  - put your YAML in a file like biblios.yml in the _data directory (see also: http://www.madhur.co.in/blog/2013/11/05/makingmostdatadirectory.html)
-
-### Step 3: Create a Jekyll Template for Your Bibliography
+  - Step 3: Create a Jekyll Template for Your Bibliography
 
 Duplicate Jekyll's built-in "default.html" file in the _layouts directory. Name it something like biblio.html instead.
 
@@ -629,25 +389,3 @@ Here are some resources that I found useful when learning how to write this:
   - https://github.com/shopify/liquid/wiki/liquid-for-designers
   - http://docs.shopify.com/themes/liquid-documentation/basics
   - http://stackoverflow.com/questions/17466362/how-to-get-sub-items-from-an-array-in-liquid
-
-
-Then, edit the index.html file. You want the template to be the one you just made, so change the top of the file so that it reads like so:
-
-
-```
-
----
-
-
-layout: biblio
----
-
-```
-
-### Step 4: Bob's Your Uncle
-
-from the command line, change to the directory where you've installed Jekyll and made all the edits above. Then do ``jekyll serve`` and if everything went well you should see a nicely formatted HTML bibliography based on the YAML data you started with.
-
-You can test the HTML that was generated with [Google's Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/) to see how it came out.
-
-Once you're happy with the HTML, you can publish it wherever you like: by adding it to an existing web page, entering it into a WordPress entry, etc.
