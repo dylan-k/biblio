@@ -354,7 +354,9 @@ Using Jekyll static CMS, you can create an HTML5 Bibliography with Schema.org Me
   Use Zotero, or whatever you like to create a bibliography. It shouldn't really matter what you use, so long as you can do...
 
   - Step 2: Create a JSON or YAML file that contains the bibliography
-Most citation managers can export json, but if you prefer to work with YAML you can convert it e.g. jsontoyaml.com
+  - 
+Most citation managers can export to `json`, and increasingly to `cff` a newer [YAML-compatible file format for citations](https://citation-file-format.github.io/). You can also convert  e.g. jsontoyaml.com
+
 put your YAML in a file like biblios.yml in the _data directory (see also: http://www.madhur.co.in/blog/2013/11/05/makingmostdatadirectory.html)
 
   - Step 3: Create a Jekyll Template for Your Bibliography
