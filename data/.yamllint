@@ -1,5 +1,0 @@
-extends: default
-
-rules:
-  # 80 chars should be enough, but don't bother me with this rule
-  line-length: disable
