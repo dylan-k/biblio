@@ -58,8 +58,7 @@
   publisher-place: "Baltimore, MD"
   genre: "Poetry Reading"
   event-place: "Baltimore, MD"
-  abstract:
-    "FEDERAL DUST AUX: Washuta, Morgan, Kinnett, Eilbert & Reed | Facebook"
+  abstract: "FEDERAL DUST AUX: Washuta, Morgan, Kinnett, Eilbert & Reed | Facebook"
   URL: "https://www.facebook.com/events/765082936896151/"
   author: "Dylan Kinnett"
   event-date:
@@ -184,8 +183,7 @@
   title: "Three Poems and a Video Poem"
   container-title: "Otoliths"
   issue: "32"
-  abstract:
-    "MICK JAGGER VS. GERTRUDE STEIN, ANTONYMIC LINES, PUNCTUATED GERTRUDE STEIN"
+  abstract: "MICK JAGGER VS. GERTRUDE STEIN, ANTONYMIC LINES, PUNCTUATED GERTRUDE STEIN"
   URL: "http://the-otolith.blogspot.com.au/2014/01/dylan-kinnett.html"
   ISSN: "1833-623X"
   language: "English"
@@ -226,8 +224,7 @@
   genre: "spoken word performance art"
   event: "Projection Reader Series"
   event-place: "Charm City Art Space"
-  abstract:
-    "Spoken Word Performance  by Dylan Kinnett  with Paul Mericle,
+  abstract: "Spoken Word Performance  by Dylan Kinnett  with Paul Mericle,
     Switchboard  and Francisco Esteban, Projection  August 17, 2013  at
     PROJECTION Reader Series,  Charm City Art Space  Baltimore,Maryland"
   URL: "http://www.youtube.com/watch?v=Jv2AoAqt64U&feature=youtube_gdata_player"
@@ -486,8 +483,7 @@
 - id: 310
   type: "chapter"
   title: "Stepping Into the Stream"
-  container-title:
-    "23rd Annual Critic's Residency at Maryland Art Place Catalogue"
+  container-title: "23rd Annual Critic's Residency at Maryland Art Place Catalogue"
   publisher-place: "Maryland Art Place"
   event-place: "Maryland Art Place"
   abstract: "art criticism by Dylan Kinnett"
@@ -578,8 +574,7 @@
   publisher-place: "Maryville College Theater"
   genre: "One-Act Play"
   event-place: "Maryville College Theater"
-  abstract:
-    "a play in one act by Dylan Kinentt. performed Thursday May 3 2003 8pm"
+  abstract: "a play in one act by Dylan Kinentt. performed Thursday May 3 2003 8pm"
   author: "Dylan Kinnett"
   event-date:
     date-parts:
@@ -637,8 +632,7 @@
 - id: 345
   type: "article"
   title: "An Apocalypse, and Goats"
-  abstract:
-    'short story. 3rd Place, "Millennium Writing Award," Maryville College'
+  abstract: 'short story. 3rd Place, "Millennium Writing Award," Maryville College'
   author: "Dylan Kinnett"
   event-date:
     date-parts:
@@ -763,8 +757,7 @@
     season: "1998"
 - id: 505
   type: "article-journal"
-  title:
-    "The Problem is Larger Than the Products of its Equation; It Remains
+  title: "The Problem is Larger Than the Products of its Equation; It Remains
     Unsolved"
   container-title: "Espresso Ink"
   volume: "VI"
@@ -884,8 +877,7 @@
   title: "Three Poems and a Video Poem"
   container-title: "Otoliths"
   issue: "32"
-  abstract:
-    "MICK JAGGER VS. GERTRUDE STEIN, ANTONYMIC LINES, PUNCTUATED GERTRUDE STEIN"
+  abstract: "MICK JAGGER VS. GERTRUDE STEIN, ANTONYMIC LINES, PUNCTUATED GERTRUDE STEIN"
   URL: "http://the-otolith.blogspot.com.au/2014/01/dylan-kinnett.html"
   ISSN: "1833-623X"
   language: "English"
@@ -1125,8 +1117,7 @@
 - id: 310
   type: "chapter"
   title: "Stepping Into the Stream"
-  container-title:
-    "23rd Annual Critic's Residency at Maryland Art Place Catalogue"
+  container-title: "23rd Annual Critic's Residency at Maryland Art Place Catalogue"
   publisher-place: "Maryland Art Place"
   event-place: "Maryland Art Place"
   abstract: "art criticism by Dylan Kinnett"
@@ -1217,8 +1208,7 @@
   publisher-place: "Maryville College Theater"
   genre: "One-Act Play"
   event-place: "Maryville College Theater"
-  abstract:
-    "a play in one act by Dylan Kinentt. performed Thursday May 3 2003 8pm"
+  abstract: "a play in one act by Dylan Kinentt. performed Thursday May 3 2003 8pm"
   author: "Dylan Kinnett"
   issued:
     date-parts:
@@ -1261,8 +1251,7 @@
 - id: 345
   type: "article"
   title: "An Apocalypse, and Goats"
-  abstract:
-    'short story. 3rd Place, "Millennium Writing Award," Maryville College'
+  abstract: 'short story. 3rd Place, "Millennium Writing Award," Maryville College'
   author: "Dylan Kinnett"
   issued:
     date-parts:
@@ -1415,13 +1404,15 @@
   location: "University of Baltimore, Student Center, Bogolmony Room"
   date: 2015-03-23
   url: "http://thelightekphrastic.com/ledproject"
-  url: "http://www.facebook.com/events/403144946529374/"
 
 - title: "Infinity's Kitchen Reading Series"
-  location: "The Sidebar Tavern, 218 East Lexington Street, Baltimore, MD 21202, United States"
+  location:
+    "The Sidebar Tavern, 218 East Lexington Street, Baltimore, MD 21202, United
+    States"
   date: "2015-02-05"
 
-- title: "Real Pants Launch Party Featuring John Dermot Woods and The Baltimore Atrocities"
+- title: "Real Pants Launch Party Featuring John Dermot Woods and The Baltimore
+    Atrocities"
   location: "47 Hall St #109 Brooklyn, NY (Bindle and Keep HQ)"
   date: 2015-01-24
   setlist:
@@ -1437,7 +1428,9 @@
   setlist:
     - "Be Sure"
 
-- title: "A Cornucopia of Writers: Led Baltimore Presents Led Haiku (a Grand Finale Reading)"
+- title:
+    "A Cornucopia of Writers: Led Baltimore Presents Led Haiku (a Grand Finale
+    Reading)"
   location: "The Crown, Baltimore, MD"
   date: "2014-12-11"
   url: "https://www.facebook.com/events/702282426552475/"
@@ -1473,27 +1466,26 @@
     - "Believe it or Not"
     - "Be Sure"
     - "A Live Studio Audience"
-  url: "https://www.facebook.com/events/792177454151321/"
   url: "https://soundcloud.com/dylan_k/coming-soon-to-videocassette"
 
 - organization: "Shepherdstown Follies"
   location: "Timber Frame Folly, Shepherdstown, WV"
   date: 2014-08-01
   setlist:
-   - "Place in the Shade"
-   - "Eviction"
-   - "Doubt"
-   - "This Poem Isn't About Wine"
-   - "2 Function Form"
-   - "Sylvia Plath vs. Cher"
-   - "Ode to a Sandwich"
-   - "The Doppler Effect"
-   - "I'm Sorry it's Been a While"
-   - "Four Years Closer"
-   - "I Dreamed of Chopping a Tree that Would Never be Felled"
-   - "Easier Said than Done"
-   - "The President Wears a Necktie"
-   - "Pompeii"
+    - "Place in the Shade"
+    - "Eviction"
+    - "Doubt"
+    - "This Poem Isn't About Wine"
+    - "2 Function Form"
+    - "Sylvia Plath vs. Cher"
+    - "Ode to a Sandwich"
+    - "The Doppler Effect"
+    - "I'm Sorry it's Been a While"
+    - "Four Years Closer"
+    - "I Dreamed of Chopping a Tree that Would Never be Felled"
+    - "Easier Said than Done"
+    - "The President Wears a Necktie"
+    - "Pompeii"
 
 - title: "Left of the Bank"
   location: "Shepherdstown, WV"
