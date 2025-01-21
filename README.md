@@ -202,6 +202,14 @@ https://dvanoni.notion.site/79b17005bc374209b0f373b1a3cde0ae?v=cbaca2dbd8044d468
 Presenting Bibliography Data with Hugo
 ===============================================================================
 
+Hugo can read from data and display it on a website. A bibliography is data. Why not combine the two?
+
+references:
+
+  - [Create Bibliographies in Hugo with a shortcode](https://lucidmanager.org/productivity/hugo-bibliography/)
+  - [Convert bibtex file to YAML with pandoc](https://kevcaz.insileco.io/notes/2021/09/2021-09-02_convert_bibtex_file/)
+  - [Hugo Data sources](https://gohugo.io/content-management/data-sources/)
+
 
 From JabRef / BibLaTex
 --------------------------------------------------------------------------------
