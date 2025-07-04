@@ -45,7 +45,8 @@ references:
     the Annex Theater as part of Artscape, on July 19-21, 2013. The play
     is a satire about astronauts. This...
   accessed: 2013-12-08
-  annote: "Accessed: 2013-12-08"
+  annote: 10-minute play, performed at Artscape 2013 in Baltimore,
+    Maryland
   author:
   - family: Kinnett
     given: Dylan
@@ -58,17 +59,6 @@ references:
   title: Party planet
   type: manuscript
   url: "https://vimeo.com/73264919"
-- accessed: 2013-12-08
-  author:
-  - family: Kinnett
-    given: Dylan
-  genre: Literary Website
-  id: kinnett_artist_2013
-  issued: 2013-08-01
-  title: Artist statement. Extreme writing community
-  title-short: Artist statement
-  type: webpage
-  url: "http://seks-ua.blogspot.com/2013/08/dylan-kinnett-artist-statement.html"
 - abstract: "9 poems by Dylan Kinnett: Reflection, Doubt, Out of Range,
     Graduation Day, Listening for Rhythm, History, An Acquired Taste,
     There Are Rabbits in the Woods, Sonnet on the Occasion of a
@@ -97,19 +87,6 @@ references:
   title-short: Housekeeping!
   type: webpage
   url: "https://web.archive.org/web/20140227061727/http://industrynightliterary.com/2014/02/26/dylan-kinnett-housekeeping/"
-- abstract: A review of Ed Zahnizer's book, \"Three Shepherdstown
-    Poems\"
-  author:
-  - family: Kinnett
-    given: Dylan
-  container-title: The Observer
-  id: kinnett_waiting_2014
-  issued: 2014-04-01
-  note: "Type: Book Review"
-  page: 20
-  title: Waiting for danske dandridge at betty's, reading sonnets
-  type: article-journal
-  url: "https://web.archive.org/web/20150322205705/http://wvobserver.com/2014/04/waiting-for-danske-dandridge-at-bettys-reading-sonnets/"
 - abstract: A mega long accordion book inside a letter press printed
     jacket - LED Haiku is a collection of 48 haiku curated by Carabella
     Sands for a project previously displayed on LED Baltimore.
@@ -303,12 +280,16 @@ references:
   type: manuscript
   url: "http://thecarrollmuseums.blogspot.com/2014/03/spoken-word-at-sunset.html"
 - accessed: 2014-04-09
+  author:
+  - family: Kinnett
+    given: Dylan
+  container-title: Projection speaker series
   id: kinnett_augury_2014
   issued: 2014-03-29
   publisher: Fake Crab Records
   publisher-place: Baltimore, MD
   title: Augury
-  type: song
+  type: chapter
   url: "https://fakecrab.bandcamp.com/track/augury"
   volume: 1
 - abstract: Join us for a celebration of The Baltimore Ekphrasis
@@ -698,23 +679,6 @@ references:
   title-short: No air radio
   type: manuscript
   url: "https://www.facebook.com/events/792177454151321/?ref=22&source=1"
-- abstract: "Two short plays published in \\_American Theatre in the
-    Twenty-First Century\\_: \\\"Party Planet\\\", a farcical, dark comedy
-    about astronauts, and \\\"The Piece of Real Estate at the Top of the
-    Tallest Building on Earth\\\", a mouthful of a title set in a too-fast
-    near-future. Two short plays published in \\_American Theatre in the
-    Twenty-First Century\\_. Future Publishing House."
-  author:
-  - family: Kinnett
-    given: Dylan
-  container-title: American theatre in the twenty-first century
-  id: 2021122221stCenturyTheatre2021
-  isbn: 1-953818-32-3
-  issued: 2020-12-01
-  publisher: Future Publishing House
-  title: Party planet
-  type: chapter
-  url: "https://amzn.to/2IHHKMo"
 - abstract: "Video: https://vimeo.com/113984196, Setlist: The Doppler
     Effect, I Dreamed Of Chopping a Tree That Would Never Be Felled, The
     President Wears a Necktie, Untitled Haiku (from LED Baltimore),
@@ -828,16 +792,6 @@ references:
   title: Three poems and a video poem
   type: article-journal
   url: "https://the-otolith.blogspot.com.au/2014/01/dylan-kinnett.html"
-- author:
-  - family: Kinnett
-    given: Dylan
-  container-title: The Observer
-  id: Kinnett2014WaitingForDanske
-  issued: 2014-04-01
-  page: 20
-  title: Waiting for danske dandridge at betty's, reading sonnets
-  type: article-journal
-  url: "http://wvobserver.com/2014/04/waiting-for-danske-dandridge-at-bettys-reading-sonnets/"
 - abstract: No bullshit! The thing is the idea. The idea is the thing.
     Physicalism is an emphatic emphasis on the physicality of art. We
     wrote and distributed a manifesto at Art Basel, Miami and other
@@ -1047,16 +1001,6 @@ references:
   title: Haiku
   type: chapter
   url: "https://www.inkpressproductions.com/\\\\#!product/prd1/3361752361/led-haiku"
-- author:
-  - family: Kinnett
-    given: Dylan
-  container-title: The Observer
-  id: Kinnett2014b
-  issued: 2014-04-01
-  page: 20
-  title: Waiting for danske dandridge at betty's, reading sonnets
-  type: article-journal
-  url: "https://wvobserver.com/2014/04/waiting-for-danske-dandridge-at-bettys-reading-sonnets/"
 - abstract: HOUSEKEEPING! a poem by Dylan Kinnett
   author:
   - family: Kinnett
@@ -1097,16 +1041,6 @@ references:
   type: article-journal
   url: "https://www.shepherdstowngoodnewspaper.org/wp-content/uploads/2013/12/126466\\\\\\_GNNP\\\\\\_Winter13\\\\\\_Final\\\\\\_Web.pdf"
   volume: XXXV, No. 4
-- author:
-  - family: Kinnett
-    given: Dylan
-  container-title: Extreme Writing Community
-  id: Kinnett2013b
-  issued: 2013-08-01
-  note: "Accessed: 2013-12-08"
-  title: Artist statement
-  type: webpage
-  url: "https://seks-ua.blogspot.com/2013/08/dylan-kinnett-artist-statement.html"
 - abstract: \"Party Planet\" is a satirical 10-minute play that explores
     the absurdities of technology and media through the lens of a
     dysfunctional team of astronauts. Performed by the Annex Theater as
@@ -1117,7 +1051,8 @@ references:
     given: Dylan
   id: Kinnett2013c
   issued: 2013-07-19
-  note: "Accessed: 2013-12-08"
+  note: 10-minute play, performed at Artscape 2013 in Baltimore,
+    Maryland
   publisher: Artscape 2013 in Baltimore, Maryland
   title: Party planet
   url: "https://vimeo.com/73264919"
@@ -1127,7 +1062,7 @@ references:
   container-title: TRUCK
   id: Kinnett2013d
   issued: 2013-07-10
-  note: "Accessed: 2013-10-26"
+  note: Literary Journal
   title: Experimental and visual poetry
   title-short: Poems
   type: webpage
@@ -1139,7 +1074,7 @@ references:
   container-title: Seltzer
   id: Kinnett2013e
   issued: 2013-06-24
-  note: "Accessed: 2013-10-26"
+  note: Literary Journal
   title: The doppler effect
   title-short: Doppler
   type: webpage
@@ -1165,7 +1100,7 @@ references:
   container-title: What Weekly
   id: Kinnett2010a
   issued: 2010-12-15
-  note: "Accessed: 2013-12-09"
+  note: News Website
   title: Shattered wig review
   type: webpage
   url: "https://whatweekly.com/2010/12/15/shattered-wig-review/"
@@ -1177,7 +1112,7 @@ references:
   container-title: What Weekly
   id: Kinnett2010b
   issued: 2010-03-30
-  note: "Accessed: 2013-12-09"
+  note: News Website
   title: WORMS
   type: webpage
   url: "https://whatweekly.com/2011/03/30/worms/"
@@ -1234,7 +1169,7 @@ references:
   container-title: To Win, Simply Play
   id: Kinnett2004a
   issued: 2004-10-26
-  note: "Accessed: 2013-12-08"
+  note: Hypertext Novella
   title: To win, simply play
   type: webpage
   url: "https://nocategories.net/novella/"
@@ -1455,16 +1390,6 @@ references:
 - author:
   - family: Kinnett
     given: Dylan
-  container-title: The Observer
-  id: Kinnett2014WaitingForDanske
-  issued: 2014-04-01
-  page: 20
-  title: Waiting for danske dandridge at betty's, reading sonnets
-  type: article-journal
-  url: "http://wvobserver.com/2014/04/waiting-for-danske-dandridge-at-bettys-reading-sonnets/"
-- author:
-  - family: Kinnett
-    given: Dylan
   event: PROJECTION speaker series 4
   event-place: Charm City Art Space
   id: Kinnett2014ProjectionSeries
@@ -1525,17 +1450,6 @@ references:
   note: "Accessed: 2013-12-08"
   title: What's the catch?
   url: "http://www.youtube.com/watch?v=Jv2AoAqt64U\\\\&feature=youtube\\\\\\_gdata\\\\\\_player"
-- abstract: Artist statement by Dylan Kinnett
-  author:
-  - family: Kinnett
-    given: Dylan
-  container-title: Extreme Writing Community
-  id: Kinnett2013ArtistStatement
-  issued: 2013-08-01
-  note: "Accessed: 2013-12-08"
-  title: Artist statement
-  type: webpage
-  url: "http://seks-ua.blogspot.com/2013/08/dylan-kinnett-artist-statement.html"
 - abstract: My 10 minute play entitled \_Party Planet\_ was performed by
     the Annex Theater as part of Artscape, on July 19-21, 2013. The play
     is a satire about astronauts.
@@ -1691,7 +1605,7 @@ references:
   container-title: To Win, Simply Play
   id: Kinnett2004ToWinSimplyPlay
   issued: 2004-10-26
-  note: "Accessed: 2013-12-08"
+  note: Hypertext Novella
   title: To win, simply play
   type: webpage
   url: "http://nocategories.net/novella/"
@@ -2278,90 +2192,6 @@ references:
   issued: 1999-02-12
   title: A travelogue from japan
   url: "https://nocategories.net/japan/"
-- abstract: "Video: https://vimeo.com/114405681"
-  id: Kinnett2014Cornucopia
-  issued: 2014-12-11
-  note: "tex.eventtitle: A cornucopia of writers: Led baltimore presents
-    led haiku (a grand finale reading) --JABREF tex.venue: The Crown,
-    Baltimore, MD"
-  title: "A cornucopia of writers: Led baltimore presents led haiku (a
-    grand finale reading)"
-  title-short: A cornucopia of writers
-  type: manuscript
-  url: "https://www.facebook.com/events/702282426552475/"
-- abstract: \"A House Without Walls\" is an allusion to the Orpheus
-    myth. Two young lovers enter a psychological hell of their own
-    making and attempt to escape. The narrative is designed to be read
-    on an electronic device. It contains links, providing the reader a
-    variety of disjointed paths through the text.
-  annote: Amazon.com
-  author:
-  - family: Kinnett
-    given: Dylan
-  edition: Kindle Edition
-  id: kinnett_house_2011
-  issued: 2011-10-30
-  note: "tex.numberofpages: 37"
-  publisher: Dylan Kinnett
-  title: A house without walls
-  type: book
-  url: "https://www.amazon.com/House-Without-Walls-Dylan-Kinnett-ebook/dp/B0061FP6TI"
-- abstract: \_A House Without Walls\_ is an allusion to the Orpheus
-    myth. Two young lovers enter a psychological hell of their own
-    making and attempt to escape. The narrative is designed to be read
-    on an electronic device. It contains links, providing the reader a
-    variety of disjointed paths through the text.
-  author:
-  - family: Kinnett
-    given: Dylan
-  edition: Kindle Edition
-  id: Kinnett2011
-  issued: 2011-10-30
-  note: Amazon.com
-  publisher: Dylan Kinnett
-  title: A house without walls
-  type: book
-  url: "https://www.amazon.com/House-Without-Walls-Dylan-Kinnett-ebook/dp/B0061FP6TI"
-- abstract: \_A House Without Walls\_ is an allusion to the Orpheus
-    myth. Two young lovers enter a psychological hell of their own
-    making and attempt to escape. The narrative is designed to be read
-    on an electronic device. It contains links, providing the reader a
-    variety of disjointed paths through the text.
-  author:
-  - family: Kinnett
-    given: Dylan
-  edition: Kindle Edition
-  id: Kinnett2011HouseWithoutWalls
-  issued: 2011-10-30
-  note: Amazon.com
-  publisher: Dylan Kinnett
-  title: A house without walls
-  type: book
-  url: "http://www.amazon.com/House-Without-Walls-Dylan-Kinnett-ebook/dp/B0061FP6TI"
-- abstract: "Video: https://vimeo.com/114405681"
-  event: "A cornucopia of writers: Led baltimore presents led haiku (a
-    grand finale reading)"
-  event-place: The Crown, Baltimore, MD
-  id: Kinnett2014Cornucopia
-  issued: 2014-12-11
-  title: "A cornucopia of writers: Led baltimore presents led haiku (a
-    grand finale reading)"
-  title-short: A cornucopia of writers
-  url: "https://www.facebook.com/events/702282426552475/"
-- abstract: "Two short plays published in \\_American Theatre in the
-    Twenty-First Century\\_: \\\"Party Planet\\\", a farcical, dark comedy
-    about astronauts, and \\\"The Piece of Real Estate at the Top of the
-    Tallest Building on Earth\\\", a mouthful of a title set in a too-fast
-    near-future. Two short plays published in \\_American Theatre in the
-    Twenty-First Century\\_. Future Publishing House."
-  author:
-  - family: Kinnett
-    given: Dylan
-  id: 2021122221stCenturyTheatre2021
-  issued: 2021-12-22
-  title: American theatre in the twenty-first century
-  type: chapter
-  url: "https://amzn.to/2IHHKMo"
 - author:
   - family: Kinnett
     given: Dylan
@@ -2369,14 +2199,6 @@ references:
   issued: 2014-12-13
   title: Litscape 2014
   url: "http://empcollective.org/2014/11/24/litscape/"
-- author:
-  - family: Kinnett
-    given: Dylan
-  id: Kinnett2014f
-  issued: 2014
-  title: Waiting for danske dandridge at betty's, reading sonnets
-  type: article-journal
-  url: "http://wvobserver.com/2014/04/waiting-for-danske-dandridge-at-bettys-reading-sonnets/"
 - abstract: HOUSEKEEPING! a poem by Dylan Kinnett
   author:
   - family: Kinnett
@@ -2395,13 +2217,6 @@ references:
   issued: 2014
   title: Three poems and a video poem
   url: "http://the-otolith.blogspot.com.au/2014/01/dylan-kinnett.html"
-- author:
-  - family: Kinnett
-    given: Dylan
-  id: Kinnett2013
-  issued: 2013
-  title: Artist statement
-  url: "http://seks-ua.blogspot.com/2013/08/dylan-kinnett-artist-statement/html"
 - author:
   - family: Kinnett
     given: Dylan
@@ -2559,6 +2374,9 @@ references:
   author:
   - family: Kinnett
     given: Dylan
+  editor:
+  - family: Falce
+    given: Florina
   genre: Video
   id: 2020AuguryVideo
   issued: 2020-08-22
@@ -2575,6 +2393,7 @@ references:
     given: Dylan
   id: 2020WeatherJupiter
   issued: 2020-08-01
+  publisher: Vimeo
   title: Weather report from jupiter
   type: motion_picture
   url: "https://player.vimeo.com/video/443794591"
@@ -2583,12 +2402,13 @@ references:
   author:
   - family: Kinnett
     given: Dylan
+  genre: Performance
   id: 2019Artscape
   issued: 2019-07-19
-  note: Prints and Multiples Fair
-  publisher-place: Artscape
-  title: What's the catch? Performance art at ArtScape
-  title-short: What's the catch?
+  publisher: Artscape Prints; Multiples Fair; Performance
+  publisher-place: Baltimore, Maryland
+  title: \"What's the catch?\" spoken word performance with analogue
+    telephones
 - abstract: A writing workshop, focused on extemporaneous composition,
     using the familiar idea of a rant as a start. Microfiction Rowhouse.
     2017.
@@ -2619,6 +2439,7 @@ references:
   title: "Natural order: An exhibition of lists"
   title-short: Natural order
   type: book
+  volume-title: "Natural order: An exhibition of lists"
 - abstract: Amalgamation of contained digital content, a small internet
     on a USB drive, together with a unique, modified book. Ink Press
     Productions. 2016. Accompanied by a performance.
@@ -2720,5 +2541,82 @@ references:
   issued: 2000
   title: An apocalypse, and goats
   type: article-journal
+- abstract: "Two short plays published in \\_American Theatre in the
+    Twenty-First Century\\_: \\\"Party Planet\\\", a farcical, dark comedy
+    about astronauts, and \\\"The Piece of Real Estate at the Top of the
+    Tallest Building on Earth\\\", a mouthful of a title set in a too-fast
+    near-future. Two short plays published in \\_American Theatre in the
+    Twenty-First Century\\_. Future Publishing House."
+  author:
+  - family: Kinnett
+    given: Dylan
+  container-title: American theatre in the twenty-first century
+  id: 2021TwentyFirstCenturyTheatre
+  isbn: 1-953818-32-3
+  issued: 2020-12-01
+  publisher: Future Publishing House
+  status: published
+  title: "Short plays: \\\"Party planet\\\", and \\\"the piece of real estate
+    at the top of the tallest building on earth.\""
+  title-short: Short plays
+  type: chapter
+  url: "https://amzn.to/2IHHKMo"
+- abstract: A review of Ed Zahnizer's book, \"Three Shepherdstown
+    Poems\"
+  author:
+  - family: Kinnett
+    given: Dylan
+  container-title: The Observer
+  id: Kinnett2014WaitingForDanske
+  issued: 2014-04-01
+  note: "Type: Book Review"
+  page: 20
+  title: Waiting for danske dandridge at betty's, reading sonnets
+  type: article-journal
+  url: "https://web.archive.org/web/20150322205705/http://wvobserver.com/2014/04/waiting-for-danske-dandridge-at-bettys-reading-sonnets/"
+- abstract: Artist statement by Dylan Kinnett
+  accessed: 2013-12-08
+  author:
+  - family: Kinnett
+    given: Dylan
+  container-title: Extreme Writing Community
+  genre: Literary Website
+  id: Kinnett2013ArtistStatement
+  issued: 2013-08-01
+  note: Literary Website
+  title: Artist statement. Extreme writing community
+  title-short: Artist statement
+  type: webpage
+  url: "https://seks-ua.blogspot.com/2013/08/dylan-kinnett-artist-statement.html"
+- abstract: "Video: https://vimeo.com/114405681"
+  event: "A cornucopia of writers: Led baltimore presents led haiku (a
+    grand finale reading)"
+  event-place: The Crown, Baltimore, MD
+  id: Kinnett2014Cornucopia
+  issued: 2014-12-11
+  note: "tex.eventtitle: A cornucopia of writers: Led baltimore presents
+    led haiku (a grand finale reading) --JABREF tex.venue: The Crown,
+    Baltimore, MD"
+  title: "A cornucopia of writers: Led baltimore presents led haiku (a
+    grand finale reading)"
+  title-short: A cornucopia of writers
+  url: "https://www.facebook.com/events/702282426552475/"
+- abstract: \"A House Without Walls\" is an allusion to the Orpheus
+    myth. Two young lovers enter a psychological hell of their own
+    making and attempt to escape. The narrative is designed to be read
+    on an electronic device. It contains links, providing the reader a
+    variety of disjointed paths through the text.
+  annote: Amazon.com
+  author:
+  - family: Kinnett
+    given: Dylan
+  edition: Kindle Edition
+  id: kinnett_house_2011
+  issued: 2011-10-30
+  note: Amazon.com
+  publisher: Dylan Kinnett
+  title: A house without walls
+  type: book
+  url: "https://www.amazon.com/House-Without-Walls-Dylan-Kinnett-ebook/dp/B0061FP6TI"
 ---
 
