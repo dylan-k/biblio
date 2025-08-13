@@ -1,0 +1,162 @@
+---
+nocite: "[@*]"
+references:
+- author:
+  - family: Cohen
+    given: P. J.
+  container-title: Proceedings of the National Academy of Sciences
+  id: CitekeyArticle
+  issue: 6
+  issued: 1963
+  page: 1143-1148
+  title: The independence of the continuum hypothesis
+  type: article-journal
+  volume: 50
+- author:
+  - family: Susskind
+    given: Leonard
+  - family: Hrabovsky
+    given: George
+  id: CitekeyBook
+  issued: 2014
+  publisher: Penguin Random House
+  publisher-place: New York, NY
+  title: "Classical mechanics: The theoretical minimum"
+  title-short: Classical mechanics
+  type: book
+- author:
+  - family: Swetla
+    given: Maria
+  id: CitekeyBooklet
+  issued: 2015-07
+  publisher: Distributed at the Stockholm Tourist Office
+  title: Canoe tours in Sweden
+  type: pamphlet
+- author:
+  - family: Urry
+    given: Lisa A.
+  - family: Cain
+    given: Michael L.
+  - family: Wasserman
+    given: Steven A.
+  - family: Minorsky
+    given: Peter V.
+  - family: Reece
+    given: Jane B.
+  container-title: Campbell biology
+  id: CitekeyInbook
+  issued: 2016
+  page: 187-221
+  publisher: Pearson
+  publisher-place: New York, NY
+  title: Photosynthesis
+  type: chapter
+- author:
+  - family: Shapiro
+    given: Howard M.
+  container-title: Flow cytometry protocols
+  editor:
+  - family: Hawley
+    given: Teresa S.
+  - family: Hawley
+    given: Robert G.
+  id: CitekeyIncollection
+  issued: 2018
+  page: 1-10
+  publisher: Springer
+  publisher-place: New York, NY
+  title: "Flow cytometry: The glass is half full"
+  title-short: Flow cytometry
+  type: chapter
+- author:
+  - family: Holleis
+    given: Paul
+  - family: Wagner
+    given: Matthias
+  - family: Koolwaaij
+    given: Johan
+  collection-title: NordiCHI
+  container-title: Proc. Of the 6th nordic conf. On human-computer
+    interaction
+  id: CitekeyInproceedings
+  issued: 2010
+  page: 207-216
+  publisher: ACM
+  publisher-place: New York, NY
+  title: Studying mobile context-aware social services in the wild
+  type: paper-conference
+- author:
+  - literal: R Core Team
+  id: CitekeyManual
+  issued: 2018
+  publisher: R Foundation for Statistical Computing
+  publisher-place: Vienna, Austria
+  title: "R: A language and environment for statistical computing"
+  title-short: R
+  type: book
+- author:
+  - family: Tang
+    given: Jian
+  genre: Master's thesis
+  id: CitekeyMastersthesis
+  issued: 1996-09
+  publisher: Massachusetts Institute of Technology
+  publisher-place: Cambridge, MA
+  title: Spin structure of the nucleon in the asymptotic limit
+  type: thesis
+- author:
+  - literal: NASA
+  id: CitekeyMisc
+  issued: 2015
+  note: "Accessed: 2018-12-06"
+  publisher: "<https://www.nasa.gov/nh/pluto-the-other-red-planet>"
+  title: "Pluto: The 'other' red planet"
+  title-short: Pluto
+- author:
+  - family: Rempel
+    given: Robert Charles
+  genre: PhD thesis
+  id: CitekeyPhdthesis
+  issued: 1956-06
+  publisher: Stanford University
+  publisher-place: Stanford, CA
+  title: Relaxation effects for coupled nuclear spins
+  type: thesis
+- collection-title: Lecture notes in computer science
+  editor:
+  - family: Stepney
+    given: Susan
+  - family: Verlan
+    given: Sergey
+  id: CitekeyProceedings
+  issued: 2018
+  publisher: Springer
+  publisher-place: Cham, Switzerland
+  title: Proceedings of the 17th international conference on computation
+    and natural computation, fontainebleau, france
+  type: book
+  volume: 10867
+- author:
+  - family: Bennett
+    given: Vicki
+  - family: Bowman
+    given: Kate
+  - family: Wright
+    given: Sarah
+  id: CitekeyTechreport
+  issued: 2018-09
+  number: DOE-SLC-6903-1
+  publisher: Salt Lake City Corporation
+  publisher-place: Salt Lake City, UT
+  title: Wasatch Solar Project final report
+  type: report
+- author:
+  - family: Suresh
+    given: Mohinder
+  id: CitekeyUnpublished
+  issued: 2006
+  title: "Evolution: A revised theory"
+  title-short: Evolution
+  type: manuscript
+---
+

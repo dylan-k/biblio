@@ -1,14 +1,32 @@
 baseURL: "https://example.org/"
 languageCode: "en-us"
-title: "Hugo Bibliography via Zotero API"
+title: "Hugo Bibliography Manager"
 
-# ignore hugo cache
+# Use a seperate config file to store your zotero API key
+# e.g. config/_default/params.yaml
+# ignore it .gitignore to prevent sharing keys
+# zotero_api_key: ""
+# zotero_user_id: ""
+
+# Bibliography configuration
+params:
+  bibliography:
+    # Data source: 'zotero' or 'hayagriva'
+    source: "hayagriva"
+    # For Hayagriva YAML source (when source: 'hayagriva')
+    hayagriva_file: "bibliography-hayagriva.yaml"
+
+  # Styling preferences
+  sort_by: "date" # date, title, author
+  sort_order: "desc" # asc, desc
+  show_abstracts: true
+  show_urls: true
+
+# ignore hugo cache for zotero API
 # to get the latest zotero data every time
 caches:
   getjson:
     maxAge: 0
   getresource:
     maxAge: 0
-# Use a seperate config file to store your zotero API key
-# e.g. config/_default/params.yaml
-# ignore this file in .gitignore to prevent sharing it
+

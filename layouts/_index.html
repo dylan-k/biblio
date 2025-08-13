@@ -12,13 +12,14 @@
 <body>
 
 
-{{ .Content }}
+  {{ .Content }}
 
   <main id="zotero_bibliography" class="mt-100">
     <h1>Bibliography</h1>
     {{ $data := dict }}
     {{ $zoteroKey := .Site.Params.zotero_api_key }}
-    {{ $url := printf "https://api.zotero.org/users/570568/publications/items/top?direction=asc&format=json&sort=title&key=%s" $zoteroKey }}
+    {{ $zoteroUser := .Site.Params.zotero_user }}
+    {{ $url := printf "https://api.zotero.org/users/%s/publications/items/top?direction=asc&format=json&sort=title&key=%s" $zoteroUser $zoteroKey }}
     {{ with resources.GetRemote $url }}
     {{ with .Err }}
     <p>Bibliography data is currently unavailable.</p>

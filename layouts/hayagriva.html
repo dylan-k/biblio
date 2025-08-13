@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }} - Hayagriva Bibliography</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .biblio-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+    .biblio-item:last-child {
+      border-bottom: none;
+    }
+    .biblio-author {
+      font-weight: 600;
+      color: #333;
+    }
+    .biblio-title {
+      font-style: italic;
+      margin: 0 0.25rem;
+    }
+    .biblio-date {
+      color: #666;
+      font-weight: 500;
+    }
+    .biblio-abstract {
+      margin-top: 0.5rem;
+      color: #666;
+      font-size: 0.9rem;
+      font-style: italic;
+      background-color: #f8f9fa;
+      padding: 0.5rem;
+      border-left: 3px solid #dee2e6;
+      border-radius: 0.25rem;
+    }
+    .biblio-genre {
+      background: #e9ecef;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.8rem;
+      color: #6c757d;
+      margin-left: 0.5rem;
+    }
+    .biblio-parent {
+      color: #495057;
+      font-weight: 500;
+    }
+    .biblio-publisher {
+      color: #6c757d;
+    }
+    .biblio-pages {
+      color: #6c757d;
+      font-style: normal;
+    }
+    .biblio-url {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .biblio-url:hover {
+      text-decoration: underline;
+    }
+    .sort-controls {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .entry-count {
+      background: #e9ecef;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    {{ .Content }}
+
+    <main id="hayagriva-bibliography">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Hayagriva Bibliography</h1>
+        <div class="entry-count">
+          {{ len .Site.Data.hayagriva }} entries
+        </div>
+      </div>
+
+      {{ $data := .Site.Data.hayagriva }}
+
+      {{ if $data }}
+        <!-- Configuration from site params -->
+        {{ $sortBy := .Site.Params.sort_by | default "date" }}
+        {{ $sortOrder := .Site.Params.sort_order | default "desc" }}
+        {{ $showAbstracts := .Site.Params.show_abstracts | default true }}
+        {{ $showUrls := .Site.Params.show_urls | default true }}
+
+        <div class="sort-controls">
+          <div class="row">
+            <div class="col-md-6">
+              <small class="text-muted">
+                <strong>Sort:</strong> {{ $sortBy | title }} ({{ $sortOrder }})
+              </small>
+            </div>
+            <div class="col-md-6 text-md-right">
+              <small class="text-muted">
+                Abstracts: {{ if $showAbstracts }}shown{{ else }}hidden{{ end }} •
+                URLs: {{ if $showUrls }}active{{ else }}disabled{{ end }}
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Normalize and prepare data for sorting -->
+        {{ $normalizedData := slice }}
+        {{ range $key, $entry := $data }}
+          {{ $normalizedDate := $entry.date | default "0000" }}
+          {{ if eq (len $normalizedDate) 4 }}
+            {{ $normalizedDate = printf "%s-01-01" $normalizedDate }}
+          {{ end }}
+          <!-- Handle different author formats -->
+          {{ $authorSort := "" }}
+          {{ if $entry.author }}
+            {{ if reflect.IsSlice $entry.author }}
+              {{ $authorSort = index $entry.author 0 }}
+            {{ else }}
+              {{ $authorSort = $entry.author }}
+            {{ end }}
+          {{ end }}
+          {{ $normalizedData = $normalizedData | append (dict "key" $key "entry" $entry "normalizedDate" $normalizedDate "authorSort" $authorSort) }}
+        {{ end }}
+
+        <!-- Sort data based on configuration -->
+        {{ if eq $sortBy "date" }}
+          {{ $normalizedData = sort $normalizedData "normalizedDate" $sortOrder }}
+        {{ else if eq $sortBy "title" }}
+          {{ $normalizedData = sort $normalizedData "entry.title" $sortOrder }}
+        {{ else if eq $sortBy "author" }}
+          {{ $normalizedData = sort $normalizedData "authorSort" $sortOrder }}
+        {{ end }}
+
+        <!-- Render entries -->
+        {{ range $index, $item := $normalizedData }}
+          {{ $key := $item.key }}
+          {{ $entry := $item.entry }}
+          <article class="biblio-item" id="{{ $key }}">
+            <div>
+              <!-- Author(s) -->
+              {{ if $entry.author }}
+                <span class="biblio-author">
+                  {{ if reflect.IsSlice $entry.author }}
+                    {{ delimit $entry.author ", " " and " }}
+                  {{ else }}
+                    {{ $entry.author }}
+                  {{ end }}
+                </span>
+              {{ end }}
+
+              <!-- Title with optional URL -->
+              <span class="biblio-title">
+                {{ if and $showUrls $entry.url }}
+                  {{ if reflect.IsMap $entry.url }}
+                    <cite><a href="{{ $entry.url.value }}" class="biblio-url">{{ $entry.title }}</a></cite>
+                    {{ if $entry.url.date }}
+                      <small class="text-muted"> (accessed {{ $entry.url.date }})</small>
+                    {{ end }}
+                  {{ else }}
+                    <cite><a href="{{ $entry.url }}" class="biblio-url">{{ $entry.title }}</a></cite>
+                  {{ end }}
+                {{ else }}
+                  <cite>{{ $entry.title }}</cite>
+                {{ end }}
+              </span>
+
+              <!-- Parent publication information -->
+              {{ if $entry.parent }}
+                {{ if $entry.parent.title }}
+                  <span class="biblio-parent">
+                    . In <cite>{{ $entry.parent.title }}</cite>
+                    {{ if $entry.parent.volume }}, vol. {{ $entry.parent.volume }}{{ end }}
+                    {{ if $entry.parent.issue }}, no. {{ $entry.parent.issue }}{{ end }}
+                  </span>
+                {{ end }}
+                {{ if $entry.parent.publisher }}
+                  <span class="biblio-publisher">. {{ $entry.parent.publisher }}</span>
+                {{ end }}
+                {{ if $entry.parent.location }}
+                  <span class="biblio-publisher">: {{ $entry.parent.location }}</span>
+                {{ end }}
+              {{ end }}
+
+              <!-- Publisher (if not in parent) -->
+              {{ if and $entry.publisher (not $entry.parent.publisher) }}
+                <span class="biblio-publisher">. {{ $entry.publisher }}</span>
+                {{ if $entry.location }}: {{ $entry.location }}{{ end }}
+              {{ end }}
+
+              <!-- Pages -->
+              {{ if index $entry "page-range" }}
+                <span class="biblio-pages">, pp. {{ index $entry "page-range" }}</span>
+              {{ end }}
+
+              <!-- Date -->
+              {{ if $entry.date }}
+                <span class="biblio-date">
+                  {{ if gt (len $entry.date) 4 }}
+                    , {{ $entry.date | dateFormat "2006-01-02" }}
+                  {{ else }}
+                    , {{ $entry.date }}
+                  {{ end }}
+                </span>
+              {{ end }}
+
+              <!-- Serial numbers (DOI, ISBN, etc.) -->
+              {{ if $entry.serial-number }}
+                {{ if reflect.IsMap $entry.serial-number }}
+                  {{ if $entry.serial-number.doi }}
+                    <span class="text-muted">. DOI: {{ $entry.serial-number.doi }}</span>
+                  {{ end }}
+                  {{ if $entry.serial-number.isbn }}
+                    <span class="text-muted">. ISBN: {{ $entry.serial-number.isbn }}</span>
+                  {{ end }}
+                  {{ if $entry.serial-number.issn }}
+                    <span class="text-muted">. ISSN: {{ $entry.serial-number.issn }}</span>
+                  {{ end }}
+                {{ else }}
+                  <span class="text-muted">. {{ $entry.serial-number }}</span>
+                {{ end }}
+              {{ end }}
+
+              <!-- Genre/Type -->
+              {{ if $entry.genre }}
+                <span class="biblio-genre">{{ $entry.genre }}</span>
+              {{ else if $entry.type }}
+                <span class="biblio-genre">{{ $entry.type }}</span>
+              {{ end }}
+
+              <!-- Note -->
+              {{ if $entry.note }}
+                <div class="mt-2">
+                  <small class="text-muted"><strong>Note:</strong> {{ $entry.note }}</small>
+                </div>
+              {{ end }}
+
+              <!-- Abstract -->
+              {{ if and $showAbstracts $entry.abstract }}
+                <div class="biblio-abstract">
+                  <strong>Abstract:</strong> {{ $entry.abstract | truncate 500 }}
+                </div>
+              {{ end }}
+
+              <!-- Archive information -->
+              {{ if $entry.archive }}
+                <div class="mt-2">
+                  <small class="text-muted">
+                    <strong>Archive:</strong> {{ $entry.archive }}
+                    {{ if $entry.archive-location }}, {{ $entry.archive-location }}{{ end }}
+                    {{ if $entry.call-number }} ({{ $entry.call-number }}){{ end }}
+                  </small>
+                </div>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+
+        <div class="mt-5 pt-4 border-top text-center text-muted">
+          <p class="mb-2">
+            <small>
+              <strong>{{ len $normalizedData }}</strong> entries displayed •
+              Data source: <strong>Hayagriva YAML</strong> •
+              Sorted by {{ $sortBy }} ({{ $sortOrder }})
+            </small>
+          </p>
+          <p class="mb-0">
+            <small>
+              Generated by <a href="https://gohugo.io" target="_blank">Hugo</a> •
+              Bibliography format: <a href="https://github.com/typst/hayagriva" target="_blank">Hayagriva</a>
+            </small>
+          </p>
+        </div>
+      {{ else }}
+        <div class="alert alert-warning">
+          <h4 class="alert-heading">No bibliography data found</h4>
+          <p>
+            Please ensure your Hayagriva YAML file exists at
+            <code>data/bibliography-hayagriva.yaml</code>.
+          </p>
+          <hr>
+          <p class="mb-0">
+            <small>
+              You can convert a BibTeX file to Hayagriva format using: <br>
+              <code>python scripts/bib2hayagriva.py input.bib output.yaml</code>
+            </small>
+          </p>
+        </div>
+      {{ end }}
+    </main>
+  </div>
+
+  <!-- Optional JavaScript for future enhancements -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
