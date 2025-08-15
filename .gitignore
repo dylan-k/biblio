@@ -7,3 +7,4 @@ public/
 config/_default/params.yaml
 public/*
 .hugo_build.lock
+biblio.code-workspace
